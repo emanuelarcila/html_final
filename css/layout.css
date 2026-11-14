@@ -1,12 +1,6 @@
-/* ==========================================================================
-   LAYOUT.CSS - Café Altiplano
-   Maquetación con CSS Grid, Mobile First, puntos de ruptura y galería auto-fit
-   ========================================================================== */
+/* Maquetacion y diseno responsive */
 
-/* --------------------------------------------------------------------------
-   1. CABECERA Y NAVEGACIÓN BASE (MÓVIL < 600px)
-   Cabecera con gradiente (RF-03.3), todo el ancho en cualquier resolución.
-   -------------------------------------------------------------------------- */
+/* Cabecera y barra superior */
 .cabecera {
   width: 100%;
   background: var(--gradiente-cabecera);
@@ -43,10 +37,7 @@
   margin-top: 0.25rem;
 }
 
-/* --------------------------------------------------------------------------
-   2. CONTENEDOR PRINCIPAL - ENFOQUE MÓVIL PRIMERO (RF-07.2, RF-07.3)
-   Base: 1 columna por debajo de 600 px y espaciado con gap (RF-07.6).
-   -------------------------------------------------------------------------- */
+/* Contenedor principal en cuadricula */
 .maqueta {
   display: grid;
   grid-template-columns: 1fr;
@@ -55,7 +46,7 @@
   margin-bottom: 2.5rem;
 }
 
-/* Elementos de ancho completo y doble columna (RF-07.4) */
+/* Bloques de ancho completo */
 .bloque--completo {
   grid-column: 1 / -1;
 }
@@ -68,10 +59,7 @@
   grid-column: 1 / -1;
 }
 
-/* --------------------------------------------------------------------------
-   3. SECCIÓN HERO / PORTADA (RF-03.3, RF-06.4, RF-07.4)
-   Altura mínima con unidad de ventana vh, fondo con imagen y superposición rgba.
-   -------------------------------------------------------------------------- */
+/* Portada hero */
 .hero {
   grid-column: 1 / -1;
   min-height: 50vh;
@@ -109,10 +97,7 @@
   max-width: 20rem;
 }
 
-/* --------------------------------------------------------------------------
-   4. GALERÍA DE PRODUCTOS AUTO-FIT (RF-07.5)
-   Se adapta automáticamente sin necesidad de media queries.
-   -------------------------------------------------------------------------- */
+/* Galeria de productos con auto-fit */
 .galeria-productos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
@@ -120,10 +105,7 @@
   width: 100%;
 }
 
-/* --------------------------------------------------------------------------
-   5. PIE DE PÁGINA (RF-07.4)
-   Ocupa todo el ancho en cualquier resolución (grid-column: 1 / -1).
-   -------------------------------------------------------------------------- */
+/* Pie de pagina */
 .pie {
   grid-column: 1 / -1;
   width: 100%;
@@ -182,10 +164,7 @@
   text-align: center;
 }
 
-/* --------------------------------------------------------------------------
-   6. PRIMER PUNTO DE RUPTURA: 600 PX (RF-07.3)
-   A partir de 600 px el contenedor principal pasa a 2 columnas.
-   -------------------------------------------------------------------------- */
+/* Pantallas medianas (desde 600px) */
 @media (min-width: 600px) {
   .cabecera__interior {
     grid-template-columns: auto 1fr;
@@ -211,13 +190,12 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  /* Dos columnas en contenedor principal (RF-07.3) */
+  /* Distribucion a dos columnas */
   .maqueta {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
 
-  /* Bloque que abarca las 2 columnas (RF-07.4) */
   .bloque--doble {
     grid-column: span 2;
   }
@@ -232,11 +210,7 @@
   }
 }
 
-/* --------------------------------------------------------------------------
-   7. SEGUNDO PUNTO DE RUPTURA: 900 PX (RF-07.3)
-   A partir de 900 px el contenedor principal pasa a 3 columnas.
-   Escrito en orden estrictamente de menor a mayor.
-   -------------------------------------------------------------------------- */
+/* Pantallas grandes (desde 900px) */
 @media (min-width: 900px) {
   .cabecera__interior {
     padding: 1.5rem 1rem;
@@ -246,13 +220,12 @@
     gap: 0.75rem;
   }
 
-  /* Tres columnas en contenedor principal (RF-07.3) */
+  /* Distribucion a tres columnas */
   .maqueta {
     grid-template-columns: repeat(3, 1fr);
     gap: 2.25rem;
   }
 
-  /* Distribución de contenido principal (2 columnas) y barra lateral (1 columna) */
   .bloque--doble {
     grid-column: span 2;
   }
@@ -265,4 +238,3 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
-

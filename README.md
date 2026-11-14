@@ -32,7 +32,7 @@ El contenedor principal (`.maqueta`) utiliza CSS Grid bajo la estrategia móvil 
 
 ---
 
-## 3. Justificación de Cinco Unidades CSS (RF-06.5)
+## 3. Justificación de Cinco Unidades CSS
 
 1. **`rem` (Unidad relativa a la raíz):** Utilizada para todos los tamaños de texto (`font-size`), espaciados internos (`padding`), márgenes (`margin`) y separaciones de cuadrícula (`gap`). Al fijar `html { font-size: 100%; }`, 1 rem equivale a los 16 px base del navegador pero respeta plenamente las preferencias de accesibilidad del usuario si decide agrandar o reducir el texto del sistema.
 2. **`px` (Unidad absoluta):** Empleada exclusivamente para trazos y bordes finos (`1px solid`, `2px solid`, `4px solid`) y sombras (`box-shadow`). En elementos de 1 a 4 píxeles se busca una nitidez exacta en la pantalla sin distorsión por escala.
@@ -56,5 +56,5 @@ El contenedor principal (`.maqueta`) utiliza CSS Grid bajo la estrategia móvil 
 - **Dificultad:** La restricción estricta de no utilizar Flexbox para la barra de navegación ni para los botones alineados, sumada a la necesidad de presentar tablas de precios con 4 columnas que en pantallas móviles de 500 px tienden a desbordar la ventana horizontalmente.
 - **Solución implementada:**
   1. Para la navegación y los botones, se utilizó CSS Grid (`display: grid`) configurando `grid-template-columns: 1fr` en móvil y `grid-template-columns: repeat(4, auto)` a partir de 600 px, demostrando el dominio de Grid en componentes pequeños sin requerir Flexbox.
-  2. Para las tablas de precios, se envolvió cada elemento `<table>` dentro de un contenedor `.tabla-contenedor` con `overflow-x: auto; width: 100%;`. De este modo, en pantallas de 500 px la tabla permite un desplazamiento horizontal interno táctil sin romper ni expandir el ancho de la página web completa, cumpliendo el requisito RF-05.5 y RF-07.7.
+  2. Para las tablas de precios, se envolvió cada elemento `<table>` dentro de un contenedor `.tabla-contenedor` con `overflow-x: auto; width: 100%;`. De este modo, en pantallas de 500 px la tabla permite un desplazamiento horizontal interno táctil sin romper ni expandir el ancho de la página web completa, garantizando que el diseño se mantenga perfectamente adaptable.
 

@@ -1,12 +1,6 @@
-/* ==========================================================================
-   COMPONENTES.CSS - Café Altiplano
-   Navegación BEM, botones, tablas con nth-child, formularios y estados interactivos
-   ========================================================================== */
+/* Componentes: menu, botones, tablas y formulario */
 
-/* --------------------------------------------------------------------------
-   1. MENÚ DE NAVEGACIÓN BEM (RF-01.3, RF-04.1, RF-04.4)
-   Sin flexbox: maquetado con Grid y lista sin viñetas.
-   -------------------------------------------------------------------------- */
+/* Menu de navegacion */
 .menu__lista {
   display: grid;
   grid-template-columns: 1fr;
@@ -31,7 +25,7 @@
   background-color: var(--color-cafe-medio);
 }
 
-/* Estados :hover y :focus visibles (RF-04.3) */
+/* Hover y foco del menu */
 .menu__enlace:hover {
   background-color: var(--color-verde-oliva);
   color: var(--color-blanco);
@@ -45,17 +39,14 @@
   color: var(--color-blanco);
 }
 
-/* Indicador de página activa (RF-04.4) */
+/* Enlace activo de la pagina actual */
 .menu__enlace--activo {
   background-color: var(--color-verde-oliva);
   color: var(--color-blanco);
   border-color: var(--color-verde-hover);
 }
 
-/* --------------------------------------------------------------------------
-   2. BOTONES (RF-04.1, RF-04.3)
-   Componente reutilizable de botón para llamadas a la acción.
-   -------------------------------------------------------------------------- */
+/* Botones */
 .boton {
   display: inline-block;
   padding: 0.75rem 1.5rem;
@@ -103,10 +94,7 @@
   outline-offset: 0.125rem;
 }
 
-/* --------------------------------------------------------------------------
-   3. TABLAS DE PRECIOS (RF-02.1, RF-04.4, RF-05.2)
-   Bordes colapsados, alineación de precios y filas alternas con :nth-child.
-   -------------------------------------------------------------------------- */
+/* Tablas de precios */
 .tabla {
   width: 100%;
   border-collapse: collapse;
@@ -137,7 +125,7 @@
   font-weight: 600;
 }
 
-/* Filas alternas con :nth-child() (RF-04.4) */
+/* Filas alternas */
 .tabla tbody tr:nth-child(even) {
   background-color: var(--color-crema-fila);
 }
@@ -157,10 +145,7 @@
   white-space: nowrap;
 }
 
-/* --------------------------------------------------------------------------
-   4. FORMULARIO DE RESERVA (RF-02.4, RF-04.2, RF-04.3)
-   Selectores de atributo, fieldset/legend y estados de foco visibles.
-   -------------------------------------------------------------------------- */
+/* Formulario de reserva */
 .formulario {
   display: grid;
   gap: 1.5rem;
@@ -194,7 +179,7 @@
   color: var(--color-cafe-oscuro);
 }
 
-/* Selectores de atributo para entradas de texto y campos (RF-04.2) */
+/* Campos de entrada */
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -213,7 +198,7 @@ textarea {
   border-radius: 0.375rem;
 }
 
-/* Foco accesible y visible (RF-04.3) */
+/* Foco en campos */
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
@@ -232,7 +217,7 @@ textarea {
   min-height: 6rem;
 }
 
-/* Opciones de radio y casilla de verificación */
+/* Opciones de radio y casilla */
 .formulario__opcion {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -257,15 +242,12 @@ input[type="checkbox"]:focus {
   outline-offset: 0.125rem;
 }
 
-/* Botón de envío del formulario */
+/* Boton de envio */
 button[type="submit"] {
   justify-self: start;
 }
 
-/* --------------------------------------------------------------------------
-   5. ÍNDICE DE ANCLAS INTERNAS (RF-01.4)
-   Barra de acceso rápido a las secciones de la carta.
-   -------------------------------------------------------------------------- */
+/* Indice de anclas de la carta */
 .indice-anclas {
   background-color: var(--color-crema-suave);
   border: 1px solid var(--color-borde);
@@ -311,10 +293,7 @@ button[type="submit"] {
   outline-offset: 0.125rem;
 }
 
-/* --------------------------------------------------------------------------
-   6. LISTAS CON ESTILO (RF-02.2)
-   Listas no ordenadas y ordenadas estilizadas con espaciado en rem.
-   -------------------------------------------------------------------------- */
+/* Listas estilizadas */
 .lista-caracteristicas,
 .lista-pasos {
   margin-left: 1.5rem;

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carta y Menú - Café Altiplano | Bebidas de Especialidad y Repostería</title>
 
-  <!-- Hojas de estilo externas por tema (RF-03.1) -->
+  <!-- Hojas de estilo externas -->
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/tipografia.css">
   <link rel="stylesheet" href="css/cajas.css">
@@ -14,9 +14,7 @@
 </head>
 <body>
 
-  <!-- ======================================================================
-       CABECERA Y NAVEGACIÓN PRINCIPAL (RF-01.2, RF-01.3)
-       ====================================================================== -->
+  <!-- Cabecera principal -->
   <header class="cabecera">
     <div class="contenedor cabecera__interior">
       <a href="index.html" class="cabecera__logotipo">
@@ -24,7 +22,7 @@
         <span class="cabecera__subtitulo">Cafetería de Especialidad</span>
       </a>
 
-      <!-- Menú con enlace activo en Carta (RF-04.4) -->
+      <!-- Menu de navegacion -->
       <nav class="menu" aria-label="Navegación principal">
         <ul class="menu__lista">
           <li class="menu__item"><a href="index.html" class="menu__enlace">Inicio</a></li>
@@ -36,17 +34,15 @@
     </div>
   </header>
 
-  <!-- ======================================================================
-       CONTENIDO PRINCIPAL - MAQUETACIÓN GRID (RF-01.2, RF-07.2)
-       ====================================================================== -->
+  <!-- Contenido principal -->
   <main class="contenedor maqueta">
 
-    <!-- INTRODUCCIÓN DE LA CARTA Y ANCLAS INTERNAS (RF-01.2, RF-01.4) -->
+    <!-- Introduccion de la carta y enlaces internos -->
     <section class="bloque--completo">
       <h1>Nuestra Carta de Café y Acompañamientos</h1>
       <p>Todas nuestras preparaciones utilizan cafés 100% arábica de origen colombiano, calificados por encima de 84 puntos SCA. Ofrecemos leches enteras, deslactosadas y alternativas vegetales sin costo adicional.</p>
 
-      <!-- Índice con anclas internas funcionales (RF-01.4) -->
+      <!-- Indice de secciones -->
       <nav class="indice-anclas" aria-label="Índice de secciones de la carta">
         <p class="indice-anclas__titulo">Explorar la carta por categoría:</p>
         <ul class="indice-anclas__lista">
@@ -57,12 +53,12 @@
       </nav>
     </section>
 
-    <!-- SECCIÓN 1: BEBIDAS CALIENTES (RF-02.1) -->
+    <!-- Seccion 1: Bebidas calientes -->
     <section id="calientes" class="bloque--doble">
       <h2>Bebidas Calientes de Especialidad</h2>
       <p>Desde el clásico espresso con acidez equilibrada hasta combinaciones con leche texturizada artesanalmente.</p>
 
-      <!-- Tabla de precios con scroll seguro (RF-02.1, RF-05.5) -->
+      <!-- Tabla de precios de bebidas calientes -->
       <div class="tabla-contenedor">
         <table class="tabla">
           <caption class="tabla__caption">Menú de bebidas calientes tradicionales y de la casa</caption>
@@ -122,11 +118,11 @@
       </div>
     </section>
 
-    <!-- BARRA LATERAL (ASIDE) CON CITA Y ORÍGENES (RF-01.2, RF-02.3) -->
+    <!-- Barra lateral con cita y origenes -->
     <aside class="tarjeta tarjeta--destacada barra-lateral">
       <h2>Nuestra Filosofía de Tueste</h2>
 
-      <!-- Cita con blockquote y cite (RF-02.3) -->
+      <!-- Cita sobre el cafe -->
       <blockquote class="cita">
         <p class="cita__texto">"El café no es simplemente una infusión cotidiana; es el fruto del trabajo campesino andino, transformado por la temperatura y el tiempo en una taza llena de notas florales y caramelo."</p>
         <cite class="cita__autor">— Mateo Gómez, Maestro Tostador</cite>
@@ -141,11 +137,12 @@
       </ul>
     </aside>
 
-    <!-- SECCIÓN 2: BEBIDAS FRÍAS Y FILTRADOS (RF-02.1) -->
+    <!-- Seccion 2: Bebidas frias y filtrados -->
     <section id="frias" class="bloque--completo">
       <h2>Bebidas Frías y Métodos de Filtrado Manual</h2>
       <p>Infusiones refrescantes en frío y métodos lentos de goteo que destacan la pureza y los matices del café.</p>
 
+      <!-- Tabla de bebidas frias -->
       <div class="tabla-contenedor">
         <table class="tabla">
           <caption class="tabla__caption">Menú de cafés fríos y métodos de extracción manual</caption>
@@ -199,11 +196,12 @@
       </div>
     </section>
 
-    <!-- SECCIÓN 3: ACOMPAÑAMIENTOS Y REPOSTERÍA (RF-02.1) -->
+    <!-- Seccion 3: Acompañamientos y reposteria -->
     <section id="acompanamientos" class="bloque--completo">
       <h2>Acompañamientos y Repostería Artesanal</h2>
       <p>Panadería y pastelería horneada diariamente en nuestro taller con ingredientes locales y mantequilla pura.</p>
 
+      <!-- Tabla de acompanamientos -->
       <div class="tabla-contenedor">
         <table class="tabla">
           <caption class="tabla__caption">Menú de repostería fresca y tostadas de masa madre</caption>
@@ -251,13 +249,13 @@
       </div>
     </section>
 
-    <!-- GALERÍA VISUAL DE PRODUCTOS (RF-07.5) -->
+    <!-- Galeria visual de la carta -->
     <section class="bloque--completo">
       <h2>Visuales de la Carta</h2>
       <p>Una mirada a nuestros productos destacados recién preparados:</p>
 
       <div class="galeria-productos">
-        <!-- Tarjeta A -->
+        <!-- Tarjeta de producto A -->
         <article class="tarjeta">
           <img src="imagenes/croissant.jpg" alt="Croissant artesanal dorado y crujiente sobre plato de cerámica" class="tarjeta__imagen">
           <div class="tarjeta__cuerpo">
@@ -267,7 +265,7 @@
           </div>
         </article>
 
-        <!-- Tarjeta B -->
+        <!-- Tarjeta de producto B -->
         <article class="tarjeta">
           <img src="imagenes/cold-brew.jpg" alt="Vaso alto con café cold brew y cubos de hielo transparentes" class="tarjeta__imagen">
           <div class="tarjeta__cuerpo">
@@ -277,7 +275,7 @@
           </div>
         </article>
 
-        <!-- Tarjeta C -->
+        <!-- Tarjeta de producto C -->
         <article class="tarjeta">
           <img src="imagenes/tarta.jpg" alt="Porción de tarta de chocolate y café con cacao espolvoreado" class="tarjeta__imagen">
           <div class="tarjeta__cuerpo">
@@ -291,17 +289,17 @@
 
   </main>
 
-  <!-- ======================================================================
-       PIE DE PÁGINA (RF-01.2, RF-01.5, RF-07.4)
-       ====================================================================== -->
+  <!-- Pie de pagina -->
   <footer class="pie">
     <div class="contenedor pie__interior">
+      <!-- Datos de la cafeteria -->
       <div class="pie__columna">
         <h3>Café Altiplano</h3>
         <p>Cafetería de especialidad comprometida con el café de origen andino, la sostenibilidad y el buen servicio.</p>
         <p><small>Horario general: Lunes a Domingo de 7:00 a 21:00</small></p>
       </div>
 
+      <!-- Enlaces de navegacion -->
       <div class="pie__columna">
         <h3>Navegación</h3>
         <ul class="pie__lista">
@@ -312,6 +310,7 @@
         </ul>
       </div>
 
+      <!-- Enlaces externos -->
       <div class="pie__columna">
         <h3>Comunidad y Cultura</h3>
         <p>Aprende más sobre el café colombiano y la cultura cafetera mundial:</p>
@@ -325,6 +324,7 @@
         </ul>
       </div>
 
+      <!-- Creditos -->
       <div class="pie__creditos">
         <p>&copy; 2026 Café Altiplano. Proyecto académico de desarrollo web con HTML5 y CSS3. Todos los datos son ficticios.</p>
       </div>
@@ -333,4 +333,3 @@
 
 </body>
 </html>
-

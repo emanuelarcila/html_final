@@ -1,12 +1,6 @@
-/* ==========================================================================
-   TIPOGRAFIA.CSS - Café Altiplano
-   Familias de fuentes con alternativas, jerarquía y ancho de lectura
-   ========================================================================== */
+/* Estilos de tipografia y encabezados */
 
-/* --------------------------------------------------------------------------
-   1. SELECTOR LÓGICO PARA ENCABEZADOS (RF-04.2, RF-05.1)
-   Uso de :is() para aplicar tipografía serif clásica a todos los títulos.
-   -------------------------------------------------------------------------- */
+/* Tipografia para titulos */
 :is(h1, h2, h3) {
   font-family: 'Georgia', 'Times New Roman', serif;
   font-weight: 700;
@@ -14,10 +8,7 @@
   line-height: 1.25;
 }
 
-/* --------------------------------------------------------------------------
-   2. JERARQUÍA TIPOGRÁFICA EN REM (RF-05.1, RF-06.1)
-   Todos los tamaños expresados estrictamente en rem, sin usar px.
-   -------------------------------------------------------------------------- */
+/* Jerarquia de tamanos de encabezados */
 h1 {
   font-size: 2.25rem;
   margin-bottom: 1rem;
@@ -33,10 +24,7 @@ h3 {
   margin-bottom: 0.5rem;
 }
 
-/* --------------------------------------------------------------------------
-   3. PÁRRAFOS Y ANCHO ÓPTIMO DE LECTURA (RF-06.3)
-   Uso de la unidad relativa ch para limitar la línea a ~65 caracteres.
-   -------------------------------------------------------------------------- */
+/* Parrafos con limite de ancho de lectura */
 p {
   font-size: 1rem;
   line-height: 1.65;
@@ -44,15 +32,12 @@ p {
   margin-bottom: 1rem;
 }
 
-/* Combinador adyacente (+) para espaciar párrafos tras un título (RF-04.2) */
+/* Espaciado de parrafo despues de encabezado */
 h2 + p {
   margin-top: 0.25rem;
 }
 
-/* --------------------------------------------------------------------------
-   4. ENLACES Y SELECTOR :not() (RF-04.2, RF-04.3)
-   Estilo diferenciado para enlaces de texto estándar frente a botones.
-   -------------------------------------------------------------------------- */
+/* Enlaces de texto */
 a:not(.boton) {
   color: var(--color-cafe-acento);
   text-decoration: underline;
@@ -68,9 +53,7 @@ a:not(.boton):focus {
   color: var(--color-verde-hover);
 }
 
-/* --------------------------------------------------------------------------
-   5. TEXTO DESTACADO Y PEQUEÑO
-   -------------------------------------------------------------------------- */
+/* Texto destacado y secundario */
 strong {
   font-weight: 700;
   color: var(--color-cafe-oscuro);
@@ -80,4 +63,3 @@ small {
   font-size: 0.875rem;
   color: var(--color-texto-secundario);
 }
-
