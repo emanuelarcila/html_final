@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta y Menú - Café Altiplano | Bebidas de Especialidad y Repostería</title>
+
+  <!-- Hojas de estilo externas por tema (RF-03.1) -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/tipografia.css">
+  <link rel="stylesheet" href="css/cajas.css">
+  <link rel="stylesheet" href="css/componentes.css">
+  <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       CABECERA Y NAVEGACIÓN PRINCIPAL (RF-01.2, RF-01.3)
+       ====================================================================== -->
+  <header class="cabecera">
+    <div class="contenedor cabecera__interior">
+      <a href="index.html" class="cabecera__logotipo">
+        <span class="cabecera__marca">Café Altiplano</span>
+        <span class="cabecera__subtitulo">Cafetería de Especialidad</span>
+      </a>
+
+      <!-- Menú con enlace activo en Carta (RF-04.4) -->
+      <nav class="menu" aria-label="Navegación principal">
+        <ul class="menu__lista">
+          <li class="menu__item"><a href="index.html" class="menu__enlace">Inicio</a></li>
+          <li class="menu__item"><a href="carta.html" class="menu__enlace menu__enlace--activo">Carta</a></li>
+          <li class="menu__item"><a href="sedes.html" class="menu__enlace">Sedes</a></li>
+          <li class="menu__item"><a href="reservas.html" class="menu__enlace">Reservas</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       CONTENIDO PRINCIPAL - MAQUETACIÓN GRID (RF-01.2, RF-07.2)
+       ====================================================================== -->
+  <main class="contenedor maqueta">
+
+    <!-- INTRODUCCIÓN DE LA CARTA Y ANCLAS INTERNAS (RF-01.2, RF-01.4) -->
+    <section class="bloque--completo">
+      <h1>Nuestra Carta de Café y Acompañamientos</h1>
+      <p>Todas nuestras preparaciones utilizan cafés 100% arábica de origen colombiano, calificados por encima de 84 puntos SCA. Ofrecemos leches enteras, deslactosadas y alternativas vegetales sin costo adicional.</p>
+
+      <!-- Índice con anclas internas funcionales (RF-01.4) -->
+      <nav class="indice-anclas" aria-label="Índice de secciones de la carta">
+        <p class="indice-anclas__titulo">Explorar la carta por categoría:</p>
+        <ul class="indice-anclas__lista">
+          <li><a href="#calientes" class="indice-anclas__enlace">1. Bebidas Calientes</a></li>
+          <li><a href="#frias" class="indice-anclas__enlace">2. Bebidas Frías y Filtrados</a></li>
+          <li><a href="#acompanamientos" class="indice-anclas__enlace">3. Acompañamientos y Repostería</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- SECCIÓN 1: BEBIDAS CALIENTES (RF-02.1) -->
+    <section id="calientes" class="bloque--doble">
+      <h2>Bebidas Calientes de Especialidad</h2>
+      <p>Desde el clásico espresso con acidez equilibrada hasta combinaciones con leche texturizada artesanalmente.</p>
+
+      <!-- Tabla de precios con scroll seguro (RF-02.1, RF-05.5) -->
+      <div class="tabla-contenedor">
+        <table class="tabla">
+          <caption class="tabla__caption">Menú de bebidas calientes tradicionales y de la casa</caption>
+          <thead>
+            <tr>
+              <th scope="col">Bebida</th>
+              <th scope="col">Descripción sensorial</th>
+              <th scope="col">Tamaño</th>
+              <th scope="col" class="tabla__celda--precio">Precio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Espresso Sencillo</th>
+              <td>Extracción corta de 30 ml con densa crema avellanada.</td>
+              <td>1 oz</td>
+              <td class="tabla__celda--precio">$6.500 COP</td>
+            </tr>
+            <tr>
+              <th scope="row">Espresso Doble (Doppio)</th>
+              <td>Doble dosis para amantes del sabor intenso y cuerpo denso.</td>
+              <td>2 oz</td>
+              <td class="tabla__celda--precio">$8.000 COP</td>
+            </tr>
+            <tr>
+              <th scope="row">Americano de Origen</th>
+              <td>Espresso doble alargado con agua caliente a 92°C.</td>
+              <td>8 oz</td>
+              <td class="tabla__celda--precio">$7.500 COP</td>
+            </tr>
+            <tr>
+              <th scope="row">Cappuccino Tradicional</th>
+              <td>Tercio de espresso, tercio de leche y tercio de microespuma sedosa.</td>
+              <td>6 oz</td>
+              <td class="tabla__celda--precio">$9.000 COP</td>
+            </tr>
+            <tr>
+              <th scope="row">Flat White Andino</th>
+              <td>Doble ristretto con fina capa de leche vaporizada aterciopelada.</td>
+              <td>6 oz</td>
+              <td class="tabla__celda--precio">$9.500 COP</td>
+            </tr>
+            <tr>
+              <th scope="row">Latte Vainilla Natural</th>
+              <td>Espresso suave, leche cremosa e infusión de vainilla de bosque.</td>
+              <td>10 oz</td>
+              <td class="tabla__celda--precio">$10.500 COP</td>
+            </tr>
+            <tr>
+              <th scope="row">Mocha Chocolate Criollo</th>
+              <td>Espresso con cacao colombiano al 70% y leche texturizada.</td>
+              <td>8 oz</td>
+              <td class="tabla__celda--precio">$11.000 COP</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- BARRA LATERAL (ASIDE) CON CITA Y ORÍGENES (RF-01.2, RF-02.3) -->
+    <aside class="tarjeta tarjeta--destacada barra-lateral">
+      <h2>Nuestra Filosofía de Tueste</h2>
+
+      <!-- Cita con blockquote y cite (RF-02.3) -->
+      <blockquote class="cita">
+        <p class="cita__texto">"El café no es simplemente una infusión cotidiana; es el fruto del trabajo campesino andino, transformado por la temperatura y el tiempo en una taza llena de notas florales y caramelo."</p>
+        <cite class="cita__autor">— Mateo Gómez, Maestro Tostador</cite>
+      </blockquote>
+
+      <h3>Nuestros Orígenes Activos</h3>
+      <p>Cambiamos de microlote cada semana para ofrecerte perfiles únicos:</p>
+      <ul class="lista-caracteristicas">
+        <li><strong>Nariño (2.100 msnm):</strong> Notas a mandarina, durazno y miel de caña.</li>
+        <li><strong>Huila (1.850 msnm):</strong> Notas a frutos rojos, panela y chocolate con leche.</li>
+        <li><strong>Antioquia (1.900 msnm):</strong> Notas a caramelo tostado, nuez y manzana verde.</li>
+      </ul>
+    </aside>
+
+    <!-- SECCIÓN 2: BEBIDAS FRÍAS Y FILTRADOS (RF-02.1) -->
+    <section id="frias" class="bloque--completo">
+      <h2>Bebidas Frías y Métodos de Filtrado Manual</h2>
+      <p>Infusiones refrescantes en frío y métodos lentos de goteo que destacan la pureza y los matices del café.</p>
+
+      <div class="tabla-contenedor">
+        <table class="tabla">
+          <caption class="tabla__caption">Menú de cafés fríos y métodos de extracción manual</caption>
+          <thead>
+            <tr>
+              <th scope="col">Preparación</th>
+              <th scope="col">Método y características</th>
+              <th scope="col">Servicio</th>
+              <th scope="col" class="tabla__celda--precio">Precio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Cold Brew Tradicional</th>
+              <td>Maceración lenta de granos durante 18 horas a baja temperatura.</td>
+              <td>Vaso 10 oz</td>
+              <td class="tabla__celda--precio">$10.000 COP</td>
+            </tr>
+            <tr>
+              <th scope="row">Cold Brew Tónica &amp; Limón</th>
+              <td>Concentrado de cold brew servido sobre agua tónica y piel de limón.</td>
+              <td>Copa 12 oz</td>
+              <td class="tabla__celda--precio">$12.500 COP</td>
+            </tr>
+            <tr>
+              <th scope="row">Iced Latte Altiplano</th>
+              <td>Espresso doble frío servido sobre leche de avena y cubos de hielo.</td>
+              <td>Vaso 12 oz</td>
+              <td class="tabla__celda--precio">$11.000 COP</td>
+            </tr>
+            <tr>
+              <th scope="row">Affogato Artesanal</th>
+              <td>Bola de helado de vainilla bañado con un shot caliente de espresso.</td>
+              <td>Copa postre</td>
+              <td class="tabla__celda--precio">$9.500 COP</td>
+            </tr>
+            <tr>
+              <th scope="row">Filtrado V60 Artesanal</th>
+              <td>Goteo en cono de papel con agua a 90°C. Taza limpia y aromática.</td>
+              <td>Tetera 300 ml</td>
+              <td class="tabla__celda--precio">$11.500 COP</td>
+            </tr>
+            <tr>
+              <th scope="row">Chemex para Compartir</th>
+              <td>Filtro de triple espesor para una bebida sin sedimentos ni aceites.</td>
+              <td>Jarra 500 ml</td>
+              <td class="tabla__celda--precio">$16.000 COP</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: ACOMPAÑAMIENTOS Y REPOSTERÍA (RF-02.1) -->
+    <section id="acompanamientos" class="bloque--completo">
+      <h2>Acompañamientos y Repostería Artesanal</h2>
+      <p>Panadería y pastelería horneada diariamente en nuestro taller con ingredientes locales y mantequilla pura.</p>
+
+      <div class="tabla-contenedor">
+        <table class="tabla">
+          <caption class="tabla__caption">Menú de repostería fresca y tostadas de masa madre</caption>
+          <thead>
+            <tr>
+              <th scope="col">Producto</th>
+              <th scope="col">Ingredientes principales</th>
+              <th scope="col">Porción</th>
+              <th scope="col" class="tabla__celda--precio">Precio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Croissant de Mantequilla</th>
+              <td>Hojaldre artesanal francés con 72 capas de mantequilla natural.</td>
+              <td>1 unidad (110 g)</td>
+              <td class="tabla__celda--precio">$7.500 COP</td>
+            </tr>
+            <tr>
+              <th scope="row">Pain au Chocolat</th>
+              <td>Hojaldre hojaldrado relleno de dos barras de chocolate negro 60%.</td>
+              <td>1 unidad (120 g)</td>
+              <td class="tabla__celda--precio">$8.500 COP</td>
+            </tr>
+            <tr>
+              <th scope="row">Tostada de Masa Madre con Aguacate</th>
+              <td>Pan rústico tostado con aguacate hass, aceite de oliva virgen y semillas.</td>
+              <td>2 rebanadas</td>
+              <td class="tabla__celda--precio">$13.000 COP</td>
+            </tr>
+            <tr>
+              <th scope="row">Tarta Tibia de Chocolate y Café</th>
+              <td>Bizcocho húmedo de cacao aromatizado con infusión de espresso Altiplano.</td>
+              <td>Porción (150 g)</td>
+              <td class="tabla__celda--precio">$10.500 COP</td>
+            </tr>
+            <tr>
+              <th scope="row">Galleta de Avena y Nibs de Cacao</th>
+              <td>Horneada con miel de abejas local, avena integral y nibs crocantes.</td>
+              <td>1 unidad grande</td>
+              <td class="tabla__celda--precio">$5.000 COP</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- GALERÍA VISUAL DE PRODUCTOS (RF-07.5) -->
+    <section class="bloque--completo">
+      <h2>Visuales de la Carta</h2>
+      <p>Una mirada a nuestros productos destacados recién preparados:</p>
+
+      <div class="galeria-productos">
+        <!-- Tarjeta A -->
+        <article class="tarjeta">
+          <img src="imagenes/croissant.jpg" alt="Croissant artesanal dorado y crujiente sobre plato de cerámica" class="tarjeta__imagen">
+          <div class="tarjeta__cuerpo">
+            <h3>Croissant de la Casa</h3>
+            <p>Elaborado cada mañana mediante fermentación lenta de 24 horas.</p>
+            <p><strong>Acompañamiento ideal:</strong> Flat White o Cappuccino.</p>
+          </div>
+        </article>
+
+        <!-- Tarjeta B -->
+        <article class="tarjeta">
+          <img src="imagenes/cold-brew.jpg" alt="Vaso alto con café cold brew y cubos de hielo transparentes" class="tarjeta__imagen">
+          <div class="tarjeta__cuerpo">
+            <h3>Cold Brew Altiplano</h3>
+            <p>Bebida suave, refrescante y con bajo nivel de acidez.</p>
+            <p><strong>Acompañamiento ideal:</strong> Galleta de avena con nibs.</p>
+          </div>
+        </article>
+
+        <!-- Tarjeta C -->
+        <article class="tarjeta">
+          <img src="imagenes/tarta.jpg" alt="Porción de tarta de chocolate y café con cacao espolvoreado" class="tarjeta__imagen">
+          <div class="tarjeta__cuerpo">
+            <h3>Tarta de Café y Cacao</h3>
+            <p>Receta secreta de repostería con reducción de espresso de altura.</p>
+            <p><strong>Acompañamiento ideal:</strong> Espresso sencillo o Chemex.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       PIE DE PÁGINA (RF-01.2, RF-01.5, RF-07.4)
+       ====================================================================== -->
+  <footer class="pie">
+    <div class="contenedor pie__interior">
+      <div class="pie__columna">
+        <h3>Café Altiplano</h3>
+        <p>Cafetería de especialidad comprometida con el café de origen andino, la sostenibilidad y el buen servicio.</p>
+        <p><small>Horario general: Lunes a Domingo de 7:00 a 21:00</small></p>
+      </div>
+
+      <div class="pie__columna">
+        <h3>Navegación</h3>
+        <ul class="pie__lista">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="carta.html">Nuestra Carta</a></li>
+          <li><a href="sedes.html">Nuestras Sedes</a></li>
+          <li><a href="reservas.html">Reservar Mesa</a></li>
+        </ul>
+      </div>
+
+      <div class="pie__columna">
+        <h3>Comunidad y Cultura</h3>
+        <p>Aprende más sobre el café colombiano y la cultura cafetera mundial:</p>
+        <ul class="pie__lista">
+          <li>
+            <a href="https://scaa.org" target="_blank" rel="noopener noreferrer">Specialty Coffee Association (SCA)</a>
+          </li>
+          <li>
+            <a href="https://federaciondecafeteros.org" target="_blank" rel="noopener noreferrer">Federación de Cafeteros</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="pie__creditos">
+        <p>&copy; 2026 Café Altiplano. Proyecto académico de desarrollo web con HTML5 y CSS3. Todos los datos son ficticios.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+

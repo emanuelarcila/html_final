@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestras Sedes - Café Altiplano | Espacios de Café en la Ciudad</title>
+
+  <!-- Hojas de estilo externas por tema (RF-03.1) -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/tipografia.css">
+  <link rel="stylesheet" href="css/cajas.css">
+  <link rel="stylesheet" href="css/componentes.css">
+  <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       CABECERA Y NAVEGACIÓN PRINCIPAL (RF-01.2, RF-01.3)
+       ====================================================================== -->
+  <header class="cabecera">
+    <div class="contenedor cabecera__interior">
+      <a href="index.html" class="cabecera__logotipo">
+        <span class="cabecera__marca">Café Altiplano</span>
+        <span class="cabecera__subtitulo">Cafetería de Especialidad</span>
+      </a>
+
+      <!-- Menú con enlace activo en Sedes (RF-04.4) -->
+      <nav class="menu" aria-label="Navegación principal">
+        <ul class="menu__lista">
+          <li class="menu__item"><a href="index.html" class="menu__enlace">Inicio</a></li>
+          <li class="menu__item"><a href="carta.html" class="menu__enlace">Carta</a></li>
+          <li class="menu__item"><a href="sedes.html" class="menu__enlace menu__enlace--activo">Sedes</a></li>
+          <li class="menu__item"><a href="reservas.html" class="menu__enlace">Reservas</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       CONTENIDO PRINCIPAL - MAQUETACIÓN GRID (RF-01.2, RF-07.2)
+       ====================================================================== -->
+  <main class="contenedor maqueta">
+
+    <!-- INTRODUCCIÓN DE SEDES (RF-01.2) -->
+    <section class="bloque--completo">
+      <h1>Nuestras Sedes en la Ciudad</h1>
+      <p>Café Altiplano cuenta con tres espacios cuidadosamente diseñados para ofrecerte una experiencia cafetera inolvidable. Cada sede posee su propia personalidad, respetando la arquitectura del barrio y ofreciendo la misma excelencia en cada taza.</p>
+    </section>
+
+    <!-- SEDE 1: CENTRO HISTÓRICO (RF-01.5, RF-05.3) -->
+    <article class="tarjeta">
+      <!-- Figura con figcaption (RF-01.5) -->
+      <figure class="figura-sede">
+        <img src="imagenes/sede-centro.jpg" alt="Interior acogedor de Café Altiplano sede Centro Histórico con paredes de ladrillo visto y mesas de madera" class="figura-sede__imagen">
+        <figcaption class="figura-sede__pie">Sede Centro Histórico: arquitectura colonial restaurada y barra de métodos lentos.</figcaption>
+      </figure>
+
+      <div class="tarjeta__cuerpo">
+        <h2>Sede Centro Histórico</h2>
+        <p>Ubicada en una casona colonial rehabilitada del siglo XIX. Un refugio tranquilo ideal para lectores, estudiantes y amantes de la historia en medio del pulso urbano.</p>
+
+        <h3>Información y Ubicación</h3>
+        <ul class="lista-caracteristicas">
+          <li><strong>Dirección:</strong> Carrera 4 # 12 - 38 (La Candelaria)</li>
+          <li><strong>Horario:</strong> Lunes a Sábado de 7:00 a 19:30 | Domingos de 8:30 a 18:00</li>
+          <li><strong>Teléfono ficticio:</strong> +57 (601) 345-6789</li>
+          <li><strong>Correo ficticio:</strong> centro@cafealtiplano.com</li>
+          <li><strong>Servicios:</strong> Biblioteca comunitaria, barra de filtrados y patio colonial.</li>
+        </ul>
+
+        <p><a href="reservas.html" class="boton boton--primario">Reservar en Centro</a></p>
+      </div>
+    </article>
+
+    <!-- SEDE 2: CHAPINERO NORTE (RF-01.5, RF-05.3) -->
+    <article class="tarjeta">
+      <!-- Figura con figcaption (RF-01.5) -->
+      <figure class="figura-sede">
+        <img src="imagenes/sede-norte.jpg" alt="Ambiente moderno y luminoso de Café Altiplano Chapinero Norte con grandes ventanales y luz natural" class="figura-sede__imagen">
+        <figcaption class="figura-sede__pie">Sede Chapinero Norte: diseño contemporáneo pensado para nómadas digitales y reuniones.</figcaption>
+      </figure>
+
+      <div class="tarjeta__cuerpo">
+        <h2>Sede Chapinero Norte</h2>
+        <p>Un espacio contemporáneo inundado de luz natural, con enchufes dedicados en cada mesa, conexión simétrica por fibra óptica y ambiente estimulante.</p>
+
+        <h3>Información y Ubicación</h3>
+        <ul class="lista-caracteristicas">
+          <li><strong>Dirección:</strong> Calle 67 # 8 - 22 (Chapinero Alto)</li>
+          <li><strong>Horario:</strong> Lunes a Viernes de 7:00 a 21:00 | Sábados y Domingos de 8:00 a 20:00</li>
+          <li><strong>Teléfono ficticio:</strong> +57 (601) 456-7890</li>
+          <li><strong>Correo ficticio:</strong> norte@cafealtiplano.com</li>
+          <li><strong>Servicios:</strong> Internet Gigabit, mesas para coworking y cabinas acústicas breves.</li>
+        </ul>
+
+        <p><a href="reservas.html" class="boton boton--primario">Reservar en Norte</a></p>
+      </div>
+    </article>
+
+    <!-- SEDE 3: TERRAZA EL JARDÍN (RF-01.5, RF-05.3) -->
+    <article class="tarjeta">
+      <!-- Figura con figcaption (RF-01.5) -->
+      <figure class="figura-sede">
+        <img src="imagenes/sede-jardin.jpg" alt="Terraza al aire libre de Café Altiplano sede Jardín rodeada de abundante vegetación y sombrillas" class="figura-sede__imagen">
+        <figcaption class="figura-sede__pie">Sede Terraza El Jardín: café al aire libre rodeado de flora andina y ambiente relajante.</figcaption>
+      </figure>
+
+      <div class="tarjeta__cuerpo">
+        <h2>Sede Terraza El Jardín</h2>
+        <p>Rodeada de helechos, orquídeas y vegetación autóctona. Nuestra terraza abierta es el lugar favorito para mañanas soleadas, compartir con mascotas y disfrutar del brunch.</p>
+
+        <h3>Información y Ubicación</h3>
+        <ul class="lista-caracteristicas">
+          <li><strong>Dirección:</strong> Carrera 15 # 85 - 14 (Zona Rosa)</li>
+          <li><strong>Horario:</strong> Martes a Domingo de 8:00 a 21:00 (Lunes cerrado por mantenimiento)</li>
+          <li><strong>Teléfono ficticio:</strong> +57 (601) 567-8901</li>
+          <li><strong>Correo ficticio:</strong> jardin@cafealtiplano.com</li>
+          <li><strong>Servicios:</strong> 100% Pet-friendly, terraza al aire libre y catas guiadas de fin de semana.</li>
+        </ul>
+
+        <p><a href="reservas.html" class="boton boton--primario">Reservar en Jardín</a></p>
+      </div>
+    </article>
+
+    <!-- BARRA LATERAL (ASIDE) CON RECOMENDACIONES DE VISITA (RF-01.2) -->
+    <aside class="tarjeta tarjeta--destacada bloque--completo">
+      <h2>Información Útil para Tu Visita</h2>
+      <p>Queremos que disfrutes tu tiempo en cualquiera de nuestras tres sedes. Ten en cuenta estas indicaciones generales:</p>
+
+      <ul class="lista-caracteristicas">
+        <li><strong>Estacionamiento:</strong> Convenio de parqueadero con descuento presentando tu ticket de consumo en las tres sedes.</li>
+        <li><strong>Visitas con mascotas:</strong> En la sede Jardín y en las terrazas exteriores de Centro y Norte son siempre bienvenidas con correa.</li>
+        <li><strong>Eventos y talleres de café:</strong> Organizamos talleres de calibración de molienda y catas de origen los sábados por la mañana. Escríbenos para consultar fechas.</li>
+        <li><strong>Reservas grupales:</strong> Para grupos mayores a 6 personas, te recomendamos apartar tu mesa con al menos 24 horas de antelación desde nuestro formulario.</li>
+      </ul>
+    </aside>
+
+  </main>
+
+  <!-- ======================================================================
+       PIE DE PÁGINA (RF-01.2, RF-01.5, RF-07.4)
+       ====================================================================== -->
+  <footer class="pie">
+    <div class="contenedor pie__interior">
+      <div class="pie__columna">
+        <h3>Café Altiplano</h3>
+        <p>Cafetería de especialidad comprometida con el café de origen andino, la sostenibilidad y el buen servicio.</p>
+        <p><small>Horario general: Lunes a Domingo de 7:00 a 21:00</small></p>
+      </div>
+
+      <div class="pie__columna">
+        <h3>Navegación</h3>
+        <ul class="pie__lista">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="carta.html">Nuestra Carta</a></li>
+          <li><a href="sedes.html">Nuestras Sedes</a></li>
+          <li><a href="reservas.html">Reservar Mesa</a></li>
+        </ul>
+      </div>
+
+      <div class="pie__columna">
+        <h3>Comunidad y Cultura</h3>
+        <p>Aprende más sobre el café colombiano y la cultura cafetera mundial:</p>
+        <ul class="pie__lista">
+          <li>
+            <a href="https://scaa.org" target="_blank" rel="noopener noreferrer">Specialty Coffee Association (SCA)</a>
+          </li>
+          <li>
+            <a href="https://federaciondecafeteros.org" target="_blank" rel="noopener noreferrer">Federación de Cafeteros</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="pie__creditos">
+        <p>&copy; 2026 Café Altiplano. Proyecto académico de desarrollo web con HTML5 y CSS3. Todos los datos son ficticios.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+

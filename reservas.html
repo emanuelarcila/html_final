@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservas de Mesa - Café Altiplano | Reserva Tu Experiencia</title>
+
+  <!-- Hojas de estilo externas por tema (RF-03.1) -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/tipografia.css">
+  <link rel="stylesheet" href="css/cajas.css">
+  <link rel="stylesheet" href="css/componentes.css">
+  <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       CABECERA Y NAVEGACIÓN PRINCIPAL (RF-01.2, RF-01.3)
+       ====================================================================== -->
+  <header class="cabecera">
+    <div class="contenedor cabecera__interior">
+      <a href="index.html" class="cabecera__logotipo">
+        <span class="cabecera__marca">Café Altiplano</span>
+        <span class="cabecera__subtitulo">Cafetería de Especialidad</span>
+      </a>
+
+      <!-- Menú con enlace activo en Reservas (RF-04.4) -->
+      <nav class="menu" aria-label="Navegación principal">
+        <ul class="menu__lista">
+          <li class="menu__item"><a href="index.html" class="menu__enlace">Inicio</a></li>
+          <li class="menu__item"><a href="carta.html" class="menu__enlace">Carta</a></li>
+          <li class="menu__item"><a href="sedes.html" class="menu__enlace">Sedes</a></li>
+          <li class="menu__item"><a href="reservas.html" class="menu__enlace menu__enlace--activo">Reservas</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       CONTENIDO PRINCIPAL - MAQUETACIÓN GRID (RF-01.2, RF-07.2)
+       ====================================================================== -->
+  <main class="contenedor maqueta">
+
+    <!-- INTRODUCCIÓN DE RESERVAS (RF-01.2) -->
+    <section class="bloque--completo">
+      <h1>Reserva Tu Mesa en Café Altiplano</h1>
+      <p>Aparta tu espacio con anticipación para disfrutar de tus preparaciones favoritas sin esperas. Ideal para encuentros de trabajo, celebraciones íntimas o simplemente garantizar tu rincón favorito de lectura.</p>
+    </section>
+
+    <!-- FORMULARIO DE RESERVA COMPLETO (RF-02.4, RF-04.2, RF-04.3) -->
+    <section class="bloque--doble">
+      <form class="formulario" action="#" method="post">
+
+        <!-- FIELDSET 1: DATOS PERSONALES DE CONTACTO -->
+        <fieldset class="formulario__seccion">
+          <legend class="formulario__leyenda">1. Información de Contacto</legend>
+
+          <div class="formulario__grupo">
+            <label for="campo-nombre" class="formulario__etiqueta">Nombre completo y apellidos:</label>
+            <input type="text" id="campo-nombre" name="nombre" class="formulario__campo" placeholder="Ej. Camila Morales Restrepo" required>
+          </div>
+
+          <div class="formulario__grupo">
+            <label for="campo-correo" class="formulario__etiqueta">Correo electrónico de confirmación:</label>
+            <input type="email" id="campo-correo" name="correo" class="formulario__campo" placeholder="camila.morales@ejemplo.com" required>
+          </div>
+
+          <div class="formulario__grupo">
+            <label for="campo-telefono" class="formulario__etiqueta">Número telefónico de contacto:</label>
+            <input type="tel" id="campo-telefono" name="telefono" class="formulario__campo" placeholder="+57 310 987 6543" required>
+          </div>
+        </fieldset>
+
+        <!-- FIELDSET 2: DETALLES DE LA RESERVA -->
+        <fieldset class="formulario__seccion">
+          <legend class="formulario__leyenda">2. Detalles de la Reserva</legend>
+
+          <!-- Select de sede (RF-02.4) -->
+          <div class="formulario__grupo">
+            <label for="campo-sede" class="formulario__etiqueta">Sede donde deseas reservar:</label>
+            <select id="campo-sede" name="sede" class="formulario__campo" required>
+              <option value="">-- Selecciona una sede --</option>
+              <option value="centro">Sede Centro Histórico (Cra 4 # 12-38)</option>
+              <option value="norte">Sede Chapinero Norte (Cll 67 # 8-22)</option>
+              <option value="jardin">Sede Terraza El Jardín (Cra 15 # 85-14)</option>
+            </select>
+          </div>
+
+          <!-- Campos de fecha y hora (RF-02.4) -->
+          <div class="formulario__grupo">
+            <label for="campo-fecha" class="formulario__etiqueta">Fecha de la visita:</label>
+            <input type="date" id="campo-fecha" name="fecha" class="formulario__campo" required>
+          </div>
+
+          <div class="formulario__grupo">
+            <label for="campo-hora" class="formulario__etiqueta">Hora estimada de llegada:</label>
+            <input type="time" id="campo-hora" name="hora" class="formulario__campo" required>
+          </div>
+
+          <!-- Campo numérico (RF-02.4) -->
+          <div class="formulario__grupo">
+            <label for="campo-personas" class="formulario__etiqueta">Cantidad de personas:</label>
+            <input type="number" id="campo-personas" name="personas" class="formulario__campo" min="1" max="12" value="2" required>
+          </div>
+
+          <!-- Grupo de radio buttons (RF-02.4) -->
+          <div class="formulario__grupo">
+            <span class="formulario__etiqueta">Zona de preferencia:</span>
+            <label class="formulario__opcion">
+              <input type="radio" name="zona" value="interior" checked>
+              Salón interior tranquilo (climatizado)
+            </label>
+            <label class="formulario__opcion">
+              <input type="radio" name="zona" value="terraza">
+              Terraza al aire libre (pet-friendly)
+            </label>
+            <label class="formulario__opcion">
+              <input type="radio" name="zona" value="barra">
+              Barra de filtrados (experiencia guiada con barista)
+            </label>
+          </div>
+
+          <!-- Área de texto para notas (RF-02.4) -->
+          <div class="formulario__grupo">
+            <label for="campo-notas" class="formulario__etiqueta">Notas o requerimientos especiales (opcional):</label>
+            <textarea id="campo-notas" name="notas" class="formulario__campo" rows="4" placeholder="Cuéntanos si requieres silla para bebé, tomas de corriente para laptop o si celebras alguna ocasión especial..."></textarea>
+          </div>
+
+          <!-- Casillas de verificación / Checkbox (RF-02.4) -->
+          <div class="formulario__grupo">
+            <label class="formulario__opcion">
+              <input type="checkbox" id="campo-terminos" name="terminos" required>
+              Confirmo mi asistencia puntual y acepto los 15 minutos de tolerancia máxima.
+            </label>
+            <label class="formulario__opcion">
+              <input type="checkbox" id="campo-boletin" name="boletin">
+              Deseo recibir invitaciones a talleres de cata y recetas en mi correo.
+            </label>
+          </div>
+        </fieldset>
+
+        <!-- Botón de envío con estilo claro (RF-04.3) -->
+        <div>
+          <button type="submit" class="boton boton--primario">Confirmar Solicitud de Reserva</button>
+        </div>
+
+      </form>
+    </section>
+
+    <!-- BARRA LATERAL (ASIDE) CON POLÍTICAS Y PREGUNTAS (RF-01.2) -->
+    <aside class="tarjeta tarjeta--destacada barra-lateral">
+      <h2>Políticas de Reserva</h2>
+      <p>Para garantizar una grata experiencia a todos nuestros visitantes, ten en cuenta el siguiente protocolo:</p>
+
+      <!-- Lista ordenada (RF-02.2) -->
+      <h3>Pasos de Confirmación</h3>
+      <ol class="lista-pasos">
+        <li>Completas el formulario con tus datos y preferencias.</li>
+        <li>Recibes una notificación automática en tu correo.</li>
+        <li>Tu mesa queda reservada con 15 minutos de cortesía.</li>
+        <li>Si necesitas modificar o cancelar, puedes llamarnos a la sede seleccionada.</li>
+      </ol>
+
+      <!-- Lista no ordenada (RF-02.2) -->
+      <h3>Preguntas Frecuentes</h3>
+      <ul class="lista-caracteristicas">
+        <li><strong>¿Tiene costo reservar?</strong> No, el servicio de reserva es totalmente gratuito.</li>
+        <li><strong>¿Puedo llevar mi mascota?</strong> Sí, seleccionando la opción de zona en terraza.</li>
+        <li><strong>¿Mesas para más de 12 personas?</strong> Escríbenos directamente a eventos@cafealtiplano.com para gestionar una reserva corporativa.</li>
+      </ul>
+    </aside>
+
+  </main>
+
+  <!-- ======================================================================
+       PIE DE PÁGINA (RF-01.2, RF-01.5, RF-07.4)
+       ====================================================================== -->
+  <footer class="pie">
+    <div class="contenedor pie__interior">
+      <div class="pie__columna">
+        <h3>Café Altiplano</h3>
+        <p>Cafetería de especialidad comprometida con el café de origen andino, la sostenibilidad y el buen servicio.</p>
+        <p><small>Horario general: Lunes a Domingo de 7:00 a 21:00</small></p>
+      </div>
+
+      <div class="pie__columna">
+        <h3>Navegación</h3>
+        <ul class="pie__lista">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="carta.html">Nuestra Carta</a></li>
+          <li><a href="sedes.html">Nuestras Sedes</a></li>
+          <li><a href="reservas.html">Reservar Mesa</a></li>
+        </ul>
+      </div>
+
+      <div class="pie__columna">
+        <h3>Comunidad y Cultura</h3>
+        <p>Aprende más sobre el café colombiano y la cultura cafetera mundial:</p>
+        <ul class="pie__lista">
+          <li>
+            <a href="https://scaa.org" target="_blank" rel="noopener noreferrer">Specialty Coffee Association (SCA)</a>
+          </li>
+          <li>
+            <a href="https://federaciondecafeteros.org" target="_blank" rel="noopener noreferrer">Federación de Cafeteros</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="pie__creditos">
+        <p>&copy; 2026 Café Altiplano. Proyecto académico de desarrollo web con HTML5 y CSS3. Todos los datos son ficticios.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+

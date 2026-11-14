@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio - Café Altiplano | Cafetería de Especialidad</title>
+
+  <!-- Hojas de estilo externas por tema (RF-03.1) -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/tipografia.css">
+  <link rel="stylesheet" href="css/cajas.css">
+  <link rel="stylesheet" href="css/componentes.css">
+  <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       CABECERA Y NAVEGACIÓN PRINCIPAL (RF-01.2, RF-01.3)
+       ====================================================================== -->
+  <header class="cabecera">
+    <div class="contenedor cabecera__interior">
+      <a href="index.html" class="cabecera__logotipo">
+        <span class="cabecera__marca">Café Altiplano</span>
+        <span class="cabecera__subtitulo">Cafetería de Especialidad</span>
+      </a>
+
+      <!-- Menú de navegación principal con enlace activo (RF-04.4) -->
+      <nav class="menu" aria-label="Navegación principal">
+        <ul class="menu__lista">
+          <li class="menu__item"><a href="index.html" class="menu__enlace menu__enlace--activo">Inicio</a></li>
+          <li class="menu__item"><a href="carta.html" class="menu__enlace">Carta</a></li>
+          <li class="menu__item"><a href="sedes.html" class="menu__enlace">Sedes</a></li>
+          <li class="menu__item"><a href="reservas.html" class="menu__enlace">Reservas</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       CONTENIDO PRINCIPAL - MAQUETACIÓN GRID (RF-01.2, RF-07.2)
+       ====================================================================== -->
+  <main class="contenedor maqueta">
+
+    <!-- PORTADA HERO (RF-03.3, RF-06.4, RF-07.4) -->
+    <section class="hero bloque--completo">
+      <h1 class="hero__titulo">Café Altiplano</h1>
+      <p class="hero__bajada">Granos cultivados a más de 1.800 metros de altura en las montañas andinas, tostados con esmero y preparados por baristas apasionados.</p>
+      <div class="hero__acciones">
+        <a href="carta.html" class="boton boton--primario">Ver Nuestra Carta</a>
+        <a href="reservas.html" class="boton boton--secundario">Reservar Mesa</a>
+      </div>
+    </section>
+
+    <!-- SECCIÓN DE PRESENTACIÓN (RF-01.2, RF-07.4) -->
+    <section class="tarjeta bloque--doble">
+      <h2>Pasión por el Café de Altura Andina</h2>
+      <p>En Café Altiplano creemos que cada taza cuenta la historia de la tierra que la vio nacer. Trabajamos directamente con pequeñas familias caficultoras del Huila, Nariño y Antioquia, garantizando un precio justo y prácticas agrícolas sostenibles que preservan el ecosistema montañoso.</p>
+      <p>Nuestra promesa es sencilla: servirte café fresco de la más alta calidad, con trazabilidad completa desde la semilla hasta el sorbo final.</p>
+
+      <h3>Nuestro Proceso Artesanal (Paso a Paso)</h3>
+      <!-- Lista ordenada (RF-02.2) -->
+      <ol class="lista-pasos">
+        <li><strong>Selección en origen:</strong> Recolección manual únicamente de cerezas maduras a más de 1.800 msnm.</li>
+        <li><strong>Tueste en pequeños lotes:</strong> Curvas de tueste medio diseñadas para potenciar aromas frutales y dulzura natural.</li>
+        <li><strong>Molienda al instante:</strong> Calibrada con precisión micrométrica para cada método de filtrado o espresso.</li>
+        <li><strong>Extracción en barra:</strong> Agua filtrada a temperatura controlada y ratios exactos para el balance perfecto.</li>
+      </ol>
+    </section>
+
+    <!-- BARRA LATERAL (ASIDE) (RF-01.2) -->
+    <aside class="tarjeta tarjeta--destacada barra-lateral">
+      <h2>Experiencia Altiplano</h2>
+      <p>Más que un café, creamos espacios acogedores diseñados para conversar, leer, trabajar o disfrutar de un momento de calma.</p>
+
+      <h3>¿Qué te ofrecemos?</h3>
+      <!-- Lista no ordenada (RF-02.2) -->
+      <ul class="lista-caracteristicas">
+        <li>Granos 100% arábica de origen único (Specialty Grade).</li>
+        <li>Barra de métodos manuales: V60, Chemex y Aeropress.</li>
+        <li>Conexión Wi-Fi de alta velocidad para trabajo remoto.</li>
+        <li>Terrazas pet-friendly con agua fresca para mascotas.</li>
+        <li>Bebidas con leche vegetal (avena y almendra) sin recargo.</li>
+      </ul>
+      <p><a href="sedes.html" class="boton boton--primario">Conoce Nuestras Sedes</a></p>
+    </aside>
+
+    <!-- SECCIÓN DE PRODUCTOS DESTACADOS - GALERÍA AUTO-FIT (RF-07.5) -->
+    <section class="bloque--completo">
+      <h2>Favoritos de la Temporada</h2>
+      <p>Una muestra de nuestras preparaciones más queridas por quienes nos visitan a diario.</p>
+
+      <div class="galeria-productos">
+        <!-- Tarjeta 1 -->
+        <article class="tarjeta">
+          <img src="imagenes/espresso.jpg" alt="Taza de café espresso Altiplano con crema dorada y espesa" class="tarjeta__imagen">
+          <div class="tarjeta__cuerpo">
+            <h3>Espresso Altiplano</h3>
+            <p>Extracción concentrada con cuerpo sedoso, acidez brillante y notas a panela y chocolate negro.</p>
+            <p><strong>Precio:</strong> $7.500 COP</p>
+          </div>
+        </article>
+
+        <!-- Tarjeta 2 -->
+        <article class="tarjeta">
+          <img src="imagenes/filtrado.jpg" alt="Preparación de café filtrado artesanal en método Chemex" class="tarjeta__imagen">
+          <div class="tarjeta__cuerpo">
+            <h3>Filtrado V60 Huila</h3>
+            <p>Método de goteo manual que resalta la claridad aromática, con notas florales a jazmín y frutas cítricas.</p>
+            <p><strong>Precio:</strong> $11.000 COP</p>
+          </div>
+        </article>
+
+        <!-- Tarjeta 3 -->
+        <article class="tarjeta">
+          <img src="imagenes/cappuccino.jpg" alt="Taza de cappuccino artesanal con arte latte en forma de hoja" class="tarjeta__imagen">
+          <div class="tarjeta__cuerpo">
+            <h3>Cappuccino Cremoso</h3>
+            <p>Espresso doble combinado con leche texturizada al punto exacto de microespuma aterciopelada.</p>
+            <p><strong>Precio:</strong> $9.500 COP</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- GLOSARIO CAFÉ - LISTA DE DEFINICIÓN (RF-02.2) -->
+    <section class="bloque--completo">
+      <h2>Glosario Cafetero para Curiosos</h2>
+      <p>Aprende algunos de los términos que utilizamos cotidianamente en nuestras barras de café.</p>
+
+      <dl class="glosario-lista">
+        <dt class="glosario-termino">Café de Especialidad</dt>
+        <dd class="glosario-definicion">Café arábica evaluado con un puntaje de cata superior a 80 puntos sobre 100 por catadores certificados (Q-Graders), cultivado con esmero y sin defectos en taza.</dd>
+
+        <dt class="glosario-termino">Extracción en V60</dt>
+        <dd class="glosario-definicion">Método cónico de goteo inventado en Japón que permite un flujo controlado de agua, obteniendo una bebida limpia, ligera y muy aromática.</dd>
+
+        <dt class="glosario-termino">Tueste Medio</dt>
+        <dd class="glosario-definicion">Perfil térmico que караmeliza los azúcares naturales del grano sin llegar a quemar sus aceites esenciales, preservando su acidez frutal original.</dd>
+
+        <dt class="glosario-termino">Trazabilidad</dt>
+        <dd class="glosario-definicion">Capacidad de conocer el origen exacto del café: el departamento, municipio, finca, altura de cultivo y nombre del caficultor que lo cultivó.</dd>
+      </dl>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       PIE DE PÁGINA (RF-01.2, RF-01.5, RF-07.4)
+       ====================================================================== -->
+  <footer class="pie">
+    <div class="contenedor pie__interior">
+      <!-- Columna 1 -->
+      <div class="pie__columna">
+        <h3>Café Altiplano</h3>
+        <p>Cafetería de especialidad comprometida con el café de origen andino, la sostenibilidad y el buen servicio.</p>
+        <p><small>Horario general: Lunes a Domingo de 7:00 a 21:00</small></p>
+      </div>
+
+      <!-- Columna 2 -->
+      <div class="pie__columna">
+        <h3>Navegación</h3>
+        <ul class="pie__lista">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="carta.html">Nuestra Carta</a></li>
+          <li><a href="sedes.html">Nuestras Sedes</a></li>
+          <li><a href="reservas.html">Reservar Mesa</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3: Enlace externo con target="_blank" y rel="noopener noreferrer" (RF-01.5) -->
+      <div class="pie__columna">
+        <h3>Comunidad y Cultura</h3>
+        <p>Aprende más sobre el café colombiano y la cultura cafetera mundial:</p>
+        <ul class="pie__lista">
+          <li>
+            <a href="https://scaa.org" target="_blank" rel="noopener noreferrer">Specialty Coffee Association (SCA)</a>
+          </li>
+          <li>
+            <a href="https://federaciondecafeteros.org" target="_blank" rel="noopener noreferrer">Federación de Cafeteros</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Créditos finales -->
+      <div class="pie__creditos">
+        <p>&copy; 2026 Café Altiplano. Proyecto académico de desarrollo web con HTML5 y CSS3. Todos los datos son ficticios.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+

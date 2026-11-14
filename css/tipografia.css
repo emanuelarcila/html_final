@@ -1,0 +1,83 @@
+/* ==========================================================================
+   TIPOGRAFIA.CSS - Café Altiplano
+   Familias de fuentes con alternativas, jerarquía y ancho de lectura
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. SELECTOR LÓGICO PARA ENCABEZADOS (RF-04.2, RF-05.1)
+   Uso de :is() para aplicar tipografía serif clásica a todos los títulos.
+   -------------------------------------------------------------------------- */
+:is(h1, h2, h3) {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-weight: 700;
+  color: var(--color-cafe-oscuro);
+  line-height: 1.25;
+}
+
+/* --------------------------------------------------------------------------
+   2. JERARQUÍA TIPOGRÁFICA EN REM (RF-05.1, RF-06.1)
+   Todos los tamaños expresados estrictamente en rem, sin usar px.
+   -------------------------------------------------------------------------- */
+h1 {
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.625rem;
+  margin-bottom: 0.875rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+/* --------------------------------------------------------------------------
+   3. PÁRRAFOS Y ANCHO ÓPTIMO DE LECTURA (RF-06.3)
+   Uso de la unidad relativa ch para limitar la línea a ~65 caracteres.
+   -------------------------------------------------------------------------- */
+p {
+  font-size: 1rem;
+  line-height: 1.65;
+  max-width: 65ch;
+  margin-bottom: 1rem;
+}
+
+/* Combinador adyacente (+) para espaciar párrafos tras un título (RF-04.2) */
+h2 + p {
+  margin-top: 0.25rem;
+}
+
+/* --------------------------------------------------------------------------
+   4. ENLACES Y SELECTOR :not() (RF-04.2, RF-04.3)
+   Estilo diferenciado para enlaces de texto estándar frente a botones.
+   -------------------------------------------------------------------------- */
+a:not(.boton) {
+  color: var(--color-cafe-acento);
+  text-decoration: underline;
+}
+
+a:not(.boton):hover {
+  color: var(--color-verde-oliva);
+}
+
+a:not(.boton):focus {
+  outline: 2px solid var(--color-verde-oliva);
+  outline-offset: 0.125rem;
+  color: var(--color-verde-hover);
+}
+
+/* --------------------------------------------------------------------------
+   5. TEXTO DESTACADO Y PEQUEÑO
+   -------------------------------------------------------------------------- */
+strong {
+  font-weight: 700;
+  color: var(--color-cafe-oscuro);
+}
+
+small {
+  font-size: 0.875rem;
+  color: var(--color-texto-secundario);
+}
+

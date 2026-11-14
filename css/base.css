@@ -1,0 +1,85 @@
+/* ==========================================================================
+   BASE.CSS - Café Altiplano
+   Configuración global, variables de diseño y estilos base de elementos
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. VARIABLES DE PALETA (RF-03.2)
+   Toda la paleta de colores se centraliza aquí.
+   No se utilizan colores sueltos fuera de este bloque :root.
+   -------------------------------------------------------------------------- */
+:root {
+  /* Tonos café de especialidad */
+  --color-cafe-oscuro: #2b1d14;
+  --color-cafe-medio: #4a3325;
+  --color-cafe-acento: #734f3a;
+
+  /* Tonos crema y beige */
+  --color-crema-fondo: #faf7f2;
+  --color-crema-suave: #f3ede2;
+  --color-crema-fila: #f8f4ed;
+  --color-blanco: #ffffff;
+
+  /* Textos */
+  --color-texto-principal: #2b1d14;
+  --color-texto-secundario: #5c534d;
+  --color-texto-claro: #faf7f2;
+
+  /* Verde oliva para detalles y acentos */
+  --color-verde-oliva: #556b2f;
+  --color-verde-hover: #3e4e22;
+  --color-verde-fondo: #edf2e6;
+
+  /* Bordes y separadores */
+  --color-borde: #d9cebe;
+  --color-borde-claro: #e8e0d4;
+
+  /* Transparencias (RF-03.3) */
+  --color-transparente: transparent;
+  --color-overlay-oscuro: rgba(43, 29, 20, 0.70);
+  --color-sombra-suave: rgba(43, 29, 20, 0.08);
+
+  /* Gradientes (RF-03.3) */
+  --gradiente-cabecera: linear-gradient(135deg, #2b1d14, #4a3325);
+  --gradiente-hero: linear-gradient(rgba(43, 29, 20, 0.75), rgba(43, 29, 20, 0.55));
+}
+
+/* --------------------------------------------------------------------------
+   2. REINICIO Y MODELO DE CAJA (RF-05.4)
+   Aplicación de box-sizing: border-box universal y márgenes base.
+   -------------------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* --------------------------------------------------------------------------
+   3. RAÍZ Y CUERPO DE DOCUMENTO (RF-06.1, RF-03.4)
+   html al 100% para respetar el tamaño configurado en el navegador del usuario.
+   El color de texto se define aquí y se aprovecha la herencia en todo el sitio.
+   -------------------------------------------------------------------------- */
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--color-texto-principal);
+  background-color: var(--color-crema-fondo);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* --------------------------------------------------------------------------
+   4. IMÁGENES FLEXIBLES (RF-07.1)
+   Las imágenes se adaptan al ancho de su contenedor y no desbordan.
+   -------------------------------------------------------------------------- */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
