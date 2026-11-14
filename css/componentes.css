@@ -1,6 +1,4 @@
-/* Componentes: menu, botones, tablas y formulario */
-
-/* Menu de navegacion */
+/* lista del menu en cuadricula */
 .menu__lista {
   display: grid;
   grid-template-columns: 1fr;
@@ -9,44 +7,47 @@
   padding: 0;
 }
 
-.menu__item {
+.menu__lista > .menu__item {
   width: 100%;
 }
 
+/* botones del menu con letra lila pastel */
 .menu__enlace {
   display: block;
   text-align: center;
   padding: 0.625rem 1rem;
-  color: var(--color-texto-claro);
+  color: var(--color-pastel-claro);
   text-decoration: none;
   font-weight: 600;
   border-radius: 0.375rem;
-  border: 1px solid var(--color-borde);
-  background-color: var(--color-cafe-medio);
+  border: 1px solid var(--color-borde-claro);
+  background-color: var(--color-fondo-oscuro);
 }
 
-/* Hover y foco del menu */
+/* cuando paso el mouse por el enlace */
 .menu__enlace:hover {
-  background-color: var(--color-verde-oliva);
-  color: var(--color-blanco);
-  border-color: var(--color-verde-hover);
+  background-color: var(--color-pastel-destacado);
+  color: var(--color-primario);
+  border-color: var(--color-pastel-destacado);
 }
 
+/* cuando navego con teclado */
 .menu__enlace:focus {
-  outline: 2px solid var(--color-crema-fondo);
+  outline: 2px solid var(--color-pastel-claro);
   outline-offset: 0.125rem;
-  background-color: var(--color-verde-hover);
-  color: var(--color-blanco);
+  background-color: var(--color-pastel-destacado);
+  color: var(--color-primario);
 }
 
-/* Enlace activo de la pagina actual */
+/* pagina donde estoy parado */
 .menu__enlace--activo {
-  background-color: var(--color-verde-oliva);
-  color: var(--color-blanco);
-  border-color: var(--color-verde-hover);
+  background-color: var(--color-pastel-destacado);
+  color: var(--color-primario);
+  border-color: var(--color-pastel-destacado);
+  font-weight: 700;
 }
 
-/* Botones */
+/* botones normales */
 .boton {
   display: inline-block;
   padding: 0.75rem 1.5rem;
@@ -60,41 +61,45 @@
   border: 2px solid var(--color-transparente);
 }
 
+/* boton morado principal */
 .boton--primario {
-  background-color: var(--color-verde-oliva);
-  color: var(--color-blanco);
-  border-color: var(--color-verde-oliva);
+  background-color: var(--color-primario);
+  color: var(--color-pastel-claro);
+  border-color: var(--color-primario);
 }
 
 .boton--primario:hover {
-  background-color: var(--color-verde-hover);
-  border-color: var(--color-verde-hover);
+  background-color: var(--color-pastel-destacado);
+  color: var(--color-primario);
+  border-color: var(--color-pastel-destacado);
 }
 
 .boton--primario:focus {
-  outline: 2px solid var(--color-cafe-oscuro);
+  outline: 2px solid var(--color-titulos);
   outline-offset: 0.125rem;
-  background-color: var(--color-verde-hover);
+  background-color: var(--color-pastel-destacado);
+  color: var(--color-primario);
 }
 
+/* boton blanco secundario */
 .boton--secundario {
   background-color: var(--color-blanco);
-  color: var(--color-cafe-oscuro);
-  border-color: var(--color-cafe-oscuro);
+  color: var(--color-titulos);
+  border-color: var(--color-titulos);
 }
 
 .boton--secundario:hover {
-  background-color: var(--color-crema-suave);
-  border-color: var(--color-verde-oliva);
-  color: var(--color-verde-oliva);
+  background-color: var(--color-fondo-tarjeta);
+  border-color: var(--color-pastel-destacado);
+  color: var(--color-primario);
 }
 
 .boton--secundario:focus {
-  outline: 2px solid var(--color-verde-oliva);
+  outline: 2px solid var(--color-pastel-destacado);
   outline-offset: 0.125rem;
 }
 
-/* Tablas de precios */
+/* tablas de precios */
 .tabla {
   width: 100%;
   border-collapse: collapse;
@@ -106,10 +111,10 @@
   font-family: 'Georgia', 'Times New Roman', serif;
   font-size: 1.125rem;
   font-weight: 700;
-  color: var(--color-cafe-oscuro);
+  color: var(--color-titulos);
   padding: 0.75rem 1rem;
   text-align: left;
-  background-color: var(--color-crema-suave);
+  background-color: var(--color-fondo-tarjeta);
   border-bottom: 2px solid var(--color-borde);
 }
 
@@ -120,32 +125,34 @@
 }
 
 .tabla th {
-  background-color: var(--color-cafe-oscuro);
+  background-color: var(--color-titulos);
   color: var(--color-texto-claro);
   font-weight: 600;
 }
 
-/* Filas alternas */
+/* filas alternas tipo cebra */
 .tabla tbody tr:nth-child(even) {
-  background-color: var(--color-crema-fila);
+  background-color: var(--color-fila-tabla);
 }
 
 .tabla tbody tr:nth-child(odd) {
   background-color: var(--color-blanco);
 }
 
+/* cuando paso el mouse por la fila */
 .tabla tbody tr:hover {
-  background-color: var(--color-verde-fondo);
+  background-color: var(--color-fondo-hover-tabla);
 }
 
+/* precio a la derecha */
 .tabla__celda--precio {
   text-align: right;
   font-weight: 700;
-  color: var(--color-cafe-oscuro);
+  color: var(--color-titulos);
   white-space: nowrap;
 }
 
-/* Formulario de reserva */
+/* formulario de reserva */
 .formulario {
   display: grid;
   gap: 1.5rem;
@@ -164,7 +171,7 @@
   font-family: 'Georgia', 'Times New Roman', serif;
   font-weight: 700;
   font-size: 1.125rem;
-  color: var(--color-cafe-oscuro);
+  color: var(--color-titulos);
   padding: 0 0.5rem;
 }
 
@@ -176,10 +183,10 @@
 .formulario__etiqueta {
   font-weight: 600;
   font-size: 0.9375rem;
-  color: var(--color-cafe-oscuro);
+  color: var(--color-titulos);
 }
 
-/* Campos de entrada */
+/* inputs del formulario */
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -192,13 +199,13 @@ textarea {
   padding: 0.625rem 0.75rem;
   font-family: inherit;
   font-size: 1rem;
-  color: var(--color-texto-principal);
+  color: var(--color-texto-cuerpo);
   background-color: var(--color-blanco);
   border: 1px solid var(--color-borde);
   border-radius: 0.375rem;
 }
 
-/* Foco en campos */
+/* borde lila cuando hago clic en el input */
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
@@ -207,9 +214,9 @@ input[type="time"]:focus,
 input[type="number"]:focus,
 select:focus,
 textarea:focus {
-  outline: 2px solid var(--color-verde-oliva);
+  outline: 2px solid var(--color-pastel-destacado);
   outline-offset: 0.125rem;
-  border-color: var(--color-verde-oliva);
+  border-color: var(--color-pastel-destacado);
 }
 
 textarea {
@@ -217,7 +224,7 @@ textarea {
   min-height: 6rem;
 }
 
-/* Opciones de radio y casilla */
+/* opciones de radio y checkbox */
 .formulario__opcion {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -232,24 +239,23 @@ input[type="radio"],
 input[type="checkbox"] {
   width: 1.125rem;
   height: 1.125rem;
-  accent-color: var(--color-verde-oliva);
+  accent-color: var(--color-primario);
   cursor: pointer;
 }
 
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-  outline: 2px solid var(--color-verde-oliva);
+  outline: 2px solid var(--color-pastel-destacado);
   outline-offset: 0.125rem;
 }
 
-/* Boton de envio */
 button[type="submit"] {
   justify-self: start;
 }
 
-/* Indice de anclas de la carta */
+/* anclas de la carta */
 .indice-anclas {
-  background-color: var(--color-crema-suave);
+  background-color: var(--color-fondo-tarjeta);
   border: 1px solid var(--color-borde);
   border-radius: 0.5rem;
   padding: 1rem 1.25rem;
@@ -260,7 +266,7 @@ button[type="submit"] {
   font-size: 1rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  color: var(--color-cafe-oscuro);
+  color: var(--color-titulos);
 }
 
 .indice-anclas__lista {
@@ -279,21 +285,21 @@ button[type="submit"] {
   border-radius: 0.25rem;
   text-decoration: none;
   font-weight: 600;
-  color: var(--color-cafe-acento);
+  color: var(--color-acento-calido);
 }
 
 .indice-anclas__enlace:hover {
-  background-color: var(--color-verde-oliva);
-  color: var(--color-blanco);
-  border-color: var(--color-verde-hover);
+  background-color: var(--color-primario);
+  color: var(--color-pastel-claro);
+  border-color: var(--color-pastel-destacado);
 }
 
 .indice-anclas__enlace:focus {
-  outline: 2px solid var(--color-verde-oliva);
+  outline: 2px solid var(--color-pastel-destacado);
   outline-offset: 0.125rem;
 }
 
-/* Listas estilizadas */
+/* listas */
 .lista-caracteristicas,
 .lista-pasos {
   margin-left: 1.5rem;

@@ -1,41 +1,48 @@
-/* Paleta de colores y variables globales */
+/* mis colores y variables */
 :root {
-  /* Tonos cafe */
-  --color-cafe-oscuro: #2b1d14;
-  --color-cafe-medio: #4a3325;
-  --color-cafe-acento: #734f3a;
-
-  /* Tonos crema y beige */
-  --color-crema-fondo: #faf7f2;
-  --color-crema-suave: #f3ede2;
-  --color-crema-fila: #f8f4ed;
+  --color-titulos: #743a16;
+  /* color para titulos h1, h2, h3 */
+  --color-fondo-oscuro: #4a3325;
+  /* fondo oscuro de la barra */
+  --color-acento-calido: #734f3a;
+  /* color cafe para detalles */
+  --color-fondo-pagina: #faf7f2;
+  /* fondo claro de la pagina */
+  --color-fondo-tarjeta: #f3ede2;
+  /* fondo crema de tarjetas */
+  --color-fila-tabla: #f8f4ed;
+  /* color de fila de tabla */
   --color-blanco: #ffffff;
-
-  /* Textos */
-  --color-texto-principal: #2b1d14;
-  --color-texto-secundario: #5c534d;
-  --color-texto-claro: #faf7f2;
-
-  /* Verde oliva */
-  --color-verde-oliva: #556b2f;
-  --color-verde-hover: #3e4e22;
-  --color-verde-fondo: #edf2e6;
-
-  /* Bordes */
-  --color-borde: #d9cebe;
-  --color-borde-claro: #e8e0d4;
-
-  /* Transparencias */
+  /* blanco */
+  --color-texto-cuerpo: #2b1d14;
+  /* texto de los parrafos */
+  --color-texto-secundario: hwb(24 31% 21% / 0.595);
+  /* texto secundario */
+  --color-texto-claro: hsla(38, 92%, 86%, 0.439);
+  /* texto blanco/crema */
+  --color-pastel-claro: #f5e6ff;
+  /* lila pastel claro para los nombres del menu */
+  --color-primario: #231931;
+  /* morado para botones y acentos */
+  --color-pastel-destacado: #a75ec8;
+  /* lila para cuando paso el mouse */
+  --color-fondo-hover-tabla: #edf2e6;
+  /* fondo cuando paso el mouse en tabla */
+  --color-borde: #260c1c;
+  /* borde oscuro */
+  --color-borde-claro: #a9762a;
+  /* borde dorado */
   --color-transparente: transparent;
-  --color-overlay-oscuro: rgba(43, 29, 20, 0.70);
-  --color-sombra-suave: rgba(43, 29, 20, 0.08);
-
-  /* Gradientes */
+  --color-overlay-hero: rgba(43, 29, 20, 0.70);
+  /* oscurecer foto de portada */
+  --color-sombra-tarjeta: rgba(43, 29, 20, 0.08);
+  /* sombra de tarjetas */
   --gradiente-cabecera: linear-gradient(135deg, #2b1d14, #4a3325);
+  /* degradado de la barra */
   --gradiente-hero: linear-gradient(rgba(43, 29, 20, 0.75), rgba(43, 29, 20, 0.55));
 }
 
-/* Reinicio de margenes y modelo de caja */
+/* para que los bordes y rellenos no rompan las cajas */
 *,
 *::before,
 *::after {
@@ -44,21 +51,22 @@
   padding: 0;
 }
 
-/* Estilos base del documento */
+/* tamano base y scroll suave */
 html {
   font-size: 100%;
   scroll-behavior: smooth;
 }
 
+/* letra general y fondo del cuerpo */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: var(--color-texto-principal);
-  background-color: var(--color-crema-fondo);
+  color: var(--color-texto-cuerpo);
+  background-color: var(--color-fondo-pagina);
   line-height: 1.6;
   min-height: 100vh;
 }
 
-/* Imagenes adaptables */
+/* para que las fotos no se salgan del contenedor */
 img {
   max-width: 100%;
   height: auto;

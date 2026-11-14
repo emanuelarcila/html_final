@@ -22,14 +22,6 @@ El sitio web está estructurado en cuatro páginas enlazadas mediante una barra 
 ## 2. Comportamiento Adaptable (Responsive)
 
 El contenedor principal (`.maqueta`) utiliza CSS Grid bajo la estrategia móvil primero (*Mobile First*), garantizando fluidez sin desbordamiento horizontal:
-
-| Página | 500 px (Móvil) | 800 px (Tableta) | 1200 px (Computador) |
-|---|---|---|---|
-| **index.html** | 1 columna, sin scroll | 2 columnas, sin scroll | 3 columnas, sin scroll |
-| **carta.html** | 1 columna, sin scroll | 2 columnas, sin scroll | 3 columnas, sin scroll |
-| **sedes.html** | 1 columna, sin scroll | 2 columnas, sin scroll | 3 columnas, sin scroll |
-| **reservas.html** | 1 columna, sin scroll | 2 columnas, sin scroll | 3 columnas, sin scroll |
-
 ---
 
 ## 3. Justificación de Cinco Unidades CSS
@@ -53,7 +45,7 @@ El contenedor principal (`.maqueta`) utiliza CSS Grid bajo la estrategia móvil 
 
 ## 5. Dificultad Encontrada y Solución
 
-- **Dificultad:** La restricción estricta de no utilizar Flexbox para la barra de navegación ni para los botones alineados, sumada a la necesidad de presentar tablas de precios con 4 columnas que en pantallas móviles de 500 px tienden a desbordar la ventana horizontalmente.
+- **Dificultad:** La restricción estricta de IA para la cracion de la pagina como tal, sumada a la necesidad de presentar tablas de precios con 4 columnas que en pantallas móviles tienden a desbordar la ventana horizontalmente, ademas de tener pocos dias para la realizacion del proyecto
 - **Solución implementada:**
   1. Para la navegación y los botones, se utilizó CSS Grid (`display: grid`) configurando `grid-template-columns: 1fr` en móvil y `grid-template-columns: repeat(4, auto)` a partir de 600 px, demostrando el dominio de Grid en componentes pequeños sin requerir Flexbox.
   2. Para las tablas de precios, se envolvió cada elemento `<table>` dentro de un contenedor `.tabla-contenedor` con `overflow-x: auto; width: 100%;`. De este modo, en pantallas de 500 px la tabla permite un desplazamiento horizontal interno táctil sin romper ni expandir el ancho de la página web completa, garantizando que el diseño se mantenga perfectamente adaptable.
