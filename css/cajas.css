@@ -6,7 +6,7 @@
   padding: 0 1rem;
 }
 
-/* estilo de las tarjetas */
+/* estilo de las tarjetas de productos y sedes */
 .tarjeta {
   background-color: var(--color-blanco);
   border: 1px solid var(--color-borde);
@@ -66,7 +66,7 @@
   border-top: 1px solid var(--color-borde-claro);
 }
 
-/* cita con linea al lado */
+/* cita textual con linea al lado */
 .cita {
   background-color: var(--color-fondo-tarjeta);
   border-left: 4px solid var(--color-pastel-destacado);
@@ -113,5 +113,7 @@
 .glosario-definicion {
   margin-left: 1rem;
   margin-bottom: 0.5rem;
-  color: var(--color-texto-secundario);
+  color: var(--color-morado-glosario);
+  font-size: 1rem;
+  line-height: 1.6;
 }

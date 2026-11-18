@@ -1,44 +1,65 @@
 /* mis colores y variables */
 :root {
-  --color-titulos: #743a16;
   /* color para titulos h1, h2, h3 */
-  --color-fondo-oscuro: #4a3325;
+  --color-titulos: #743a16;
+
   /* fondo oscuro de la barra */
-  --color-acento-calido: #734f3a;
+  --color-fondo-oscuro: #4a3325;
+
   /* color cafe para detalles */
-  --color-fondo-pagina: #faf7f2;
+  --color-acento-calido: #734f3a;
+
   /* fondo claro de la pagina */
-  --color-fondo-tarjeta: #f3ede2;
+  --color-fondo-pagina: #faf7f2;
+
   /* fondo crema de tarjetas */
-  --color-fila-tabla: #f8f4ed;
+  --color-fondo-tarjeta: #f3ede2;
+
   /* color de fila de tabla */
-  --color-blanco: #ffffff;
+  --color-fila-tabla: #f8f4ed;
+
   /* blanco */
-  --color-texto-cuerpo: #2b1d14;
+  --color-blanco: #ffffff;
+
   /* texto de los parrafos */
-  --color-texto-secundario: hwb(24 31% 21% / 0.595);
+  --color-texto-cuerpo: #2b1d14;
+
   /* texto secundario */
-  --color-texto-claro: hsla(38, 92%, 86%, 0.439);
+  --color-texto-secundario: hwb(131 6% 72% / 0.595);
+
   /* texto blanco/crema */
-  --color-pastel-claro: #f5e6ff;
+  --color-texto-claro: hsla(38, 92%, 86%, 0.439);
+
   /* lila pastel claro para los nombres del menu */
-  --color-primario: #231931;
+  --color-pastel-claro: #f5e6ff;
+
   /* morado para botones y acentos */
-  --color-pastel-destacado: #a75ec8;
+  --color-primario: #231931;
+
   /* lila para cuando paso el mouse */
-  --color-fondo-hover-tabla: #edf2e6;
+  --color-pastel-destacado: #a75ec8;
+
   /* fondo cuando paso el mouse en tabla */
-  --color-borde: #260c1c;
+  --color-fondo-hover-tabla: #edf2e6;
+
   /* borde oscuro */
-  --color-borde-claro: #a9762a;
+  --color-borde: #260c1c;
+
   /* borde dorado */
+  --color-borde-claro: #a9762a;
+
   --color-transparente: transparent;
-  --color-overlay-hero: rgba(43, 29, 20, 0.70);
+
   /* oscurecer foto de portada */
-  --color-sombra-tarjeta: rgba(43, 29, 20, 0.08);
+  --color-overlay-hero: rgba(43, 29, 20, 0.70);
+
   /* sombra de tarjetas */
-  --gradiente-cabecera: linear-gradient(135deg, #2b1d14, #4a3325);
+  --color-sombra-tarjeta: rgba(43, 29, 20, 0.08);
+
   /* degradado de la barra */
+  --gradiente-cabecera: linear-gradient(135deg, #2b1d14, #4a3325);
+
+  /* degradado de la portada */
   --gradiente-hero: linear-gradient(rgba(43, 29, 20, 0.75), rgba(43, 29, 20, 0.55));
 }
 
