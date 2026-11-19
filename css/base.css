@@ -25,7 +25,7 @@
   --color-texto-cuerpo: #2b1d14;
 
   /* texto secundario */
-  --color-texto-secundario: hwb(131 6% 72% / 0.595);
+  --color-texto-secundario: #ffffff;
 
   /* texto blanco/crema */
   --color-texto-claro: hsla(38, 92%, 86%, 0.439);
