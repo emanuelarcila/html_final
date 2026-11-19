@@ -1,4 +1,4 @@
-/* tipo de letra para titulos */
+/* Tipografía serif encabezados */
 :is(h1, h2, h3) {
   font-family: 'Georgia', 'Times New Roman', serif;
   font-weight: 700;
@@ -6,23 +6,25 @@
   line-height: 1.25;
 }
 
-/* tamanos de titulos en rem */
+/* Título h1 único */
 h1 {
   font-size: 2.25rem;
   margin-bottom: 1rem;
 }
 
+/* Título sección h2 */
 h2 {
   font-size: 1.625rem;
   margin-bottom: 0.875rem;
 }
 
+/* Subtítulo h3 */
 h3 {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
 }
 
-/* parrafos con limite de 65 caracteres para no cansar la vista */
+/* Párrafos límite 65ch */
 p {
   font-size: 1rem;
   line-height: 1.65;
@@ -30,35 +32,37 @@ p {
   margin-bottom: 1rem;
 }
 
-/* espacio si hay parrafo despues de un h2 */
+/* Margen párrafo tras h2 */
 h2 + p {
   margin-top: 0.25rem;
 }
 
-/* enlaces normales */
+/* Enlaces párrafos */
 a:not(.boton) {
-  color: var(--color-acento-calido);
+  color: var(--color-enlace);
   text-decoration: underline;
 }
 
+/* Enlace hover */
 a:not(.boton):hover {
-  color: var(--color-pastel-destacado);
+  color: var(--color-enlace-hover);
 }
 
-/* foco cuando uso el tabulador */
+/* Enlace focus teclado */
 a:not(.boton):focus {
-  outline: 2px solid var(--color-pastel-destacado);
+  outline: 2px solid var(--color-enlace-hover);
   outline-offset: 0.125rem;
-  color: var(--color-primario);
+  color: var(--color-enlace-focus);
 }
 
-/* texto en negrilla y pequeno */
+/* Negrita strong precios y datos */
 strong {
   font-weight: 700;
-  color: var(--color-titulos);
+  color: var(--color-texto-destacado);
 }
 
+/* Texto aclaratorio small */
 small {
   font-size: 0.875rem;
-  color: var(--color-texto-secundario);
+  color: var(--color-texto-aclaratorio);
 }

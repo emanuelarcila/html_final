@@ -1,69 +1,306 @@
-/* mis colores y variables */
+/* Variables diseño y paleta independiente */
 :root {
-  /* color para titulos h1, h2, h3 */
-  --color-titulos: #743a16;
+  /* GENERAL Y FONDOS */
 
-  /* fondo oscuro de la barra */
-  --color-fondo-oscuro: #4a3325;
-
-  /* color cafe para detalles */
-  --color-acento-calido: #734f3a;
-
-  /* fondo claro de la pagina */
+  /* Fondo general páginas */
   --color-fondo-pagina: #faf7f2;
 
-  /* fondo crema de tarjetas */
-  --color-fondo-tarjeta: #f3ede2;
-
-  /* color de fila de tabla */
-  --color-fila-tabla: #f8f4ed;
-
-  /* blanco */
-  --color-blanco: #ffffff;
-
-  /* texto de los parrafos */
+  /* Texto general párrafos */
   --color-texto-cuerpo: #2b1d14;
 
-  /* texto secundario */
-  --color-texto-secundario: #ffffff;
+  /* Títulos h1, h2, h3 */
+  --color-titulos: #743a16;
 
-  /* texto blanco/crema */
-  --color-texto-claro: hsla(38, 92%, 86%, 0.439);
+  /* Negrita strong datos destacados */
+  --color-texto-destacado: #743a16;
 
-  /* lila pastel claro para los nombres del menu */
-  --color-pastel-claro: #f5e6ff;
+  /* Enlaces texto párrafos */
+  --color-enlace: #734f3a;
 
-  /* morado para botones y acentos */
-  --color-primario: #231931;
+  /* Enlace texto hover */
+  --color-enlace-hover: #a75ec8;
 
-  /* lila para cuando paso el mouse */
-  --color-pastel-destacado: #a75ec8;
+  /* Enlace texto focus */
+  --color-enlace-focus: #231931;
 
-  /* fondo cuando paso el mouse en tabla */
-  --color-fondo-hover-tabla: #edf2e6;
+  /* CABECERA Y MENU */
 
-  /* borde oscuro */
-  --color-borde: #260c1c;
+  /* Fondo cabecera superior */
+  --color-cabecera-fondo: #4a3325;
 
-  /* borde dorado */
-  --color-borde-claro: #a9762a;
+  /* Borde inferior cabecera */
+  --color-cabecera-borde: #a75ec8;
 
-  --color-transparente: transparent;
+  /* Marca texto logotipo */
+  --color-cabecera-marca: #faf7f2;
 
-  /* oscurecer foto de portada */
-  --color-overlay-hero: rgba(43, 29, 20, 0.70);
+  /* Subtítulo texto cabecera */
+  --color-cabecera-subtitulo: #f5e6ff;
 
-  /* sombra de tarjetas */
-  --color-sombra-tarjeta: rgba(43, 29, 20, 0.08);
-
-  /* degradado de la barra */
+  /* Degradado fondo cabecera */
   --gradiente-cabecera: linear-gradient(135deg, #2b1d14, #4a3325);
 
-  /* degradado de la portada */
+  /* Fondo enlaces menú */
+  --color-menu-fondo: #4a3325;
+
+  /* Texto enlaces menú */
+  --color-menu-texto: #f5e6ff;
+
+  /* Borde enlaces menú */
+  --color-menu-borde: #a9762a;
+
+  /* Fondo menú hover y activo */
+  --color-menu-hover-fondo: #a75ec8;
+
+  /* Texto menú hover y activo */
+  --color-menu-hover-texto: #231931;
+
+  /* PORTADA HERO */
+
+  /* Título portada hero */
+  --color-hero-titulo: #faf7f2;
+
+  /* Texto bajada portada hero */
+  --color-hero-bajada: #faf7f2;
+
+  /* Capa oscura foto portada hero */
+  --color-hero-overlay: rgba(43, 29, 20, 0.70);
+
+  /* Sombra caja portada hero */
+  --color-hero-sombra: rgba(43, 29, 20, 0.08);
+
+  /* Degradado portada hero */
   --gradiente-hero: linear-gradient(rgba(43, 29, 20, 0.75), rgba(43, 29, 20, 0.55));
+
+  /* BOTONES */
+
+  /* Botón principal Reservar fondo */
+  --color-boton-primario-fondo: #231931;
+
+  /* Botón principal texto */
+  --color-boton-primario-texto: #f5e6ff;
+
+  /* Botón principal borde */
+  --color-boton-primario-borde: #231931;
+
+  /* Botón principal hover fondo */
+  --color-boton-primario-hover-fondo: #a75ec8;
+
+  /* Botón principal hover texto */
+  --color-boton-primario-hover-texto: #231931;
+
+  /* Botón principal focus contorno */
+  --color-boton-primario-focus: #743a16;
+
+  /* Botón secundario Ver carta fondo */
+  --color-boton-secundario-fondo: #ffffff;
+
+  /* Botón secundario texto */
+  --color-boton-secundario-texto: #743a16;
+
+  /* Botón secundario borde */
+  --color-boton-secundario-borde: #743a16;
+
+  /* Botón secundario hover fondo */
+  --color-boton-secundario-hover-fondo: #f3ede2;
+
+  /* Botón secundario hover texto */
+  --color-boton-secundario-hover-texto: #231931;
+
+  /* Botón secundario hover borde */
+  --color-boton-secundario-hover-borde: #a75ec8;
+
+  /* TARJETAS PRODUCTOS Y SEDES */
+
+  /* Fondo tarjetas normales */
+  --color-tarjeta-fondo: #ffffff;
+
+  /* Borde tarjetas normales */
+  --color-tarjeta-borde: #260c1c;
+
+  /* Sombra tarjetas */
+  --color-tarjeta-sombra: rgba(43, 29, 20, 0.08);
+
+  /* Fondo tarjeta destacada */
+  --color-tarjeta-destacada-fondo: #f3ede2;
+
+  /* Borde tarjeta destacada */
+  --color-tarjeta-destacada-borde: #a75ec8;
+
+  /* SEDES (sedes.html) */
+
+  /* Fondo figura foto sede */
+  --color-sede-fondo: #ffffff;
+
+  /* Borde figura foto sede */
+  --color-sede-borde: #260c1c;
+
+  /* Fondo pie foto sede figcaption */
+  --color-sede-pie-fondo: #f8f4ed;
+
+  /* Texto pie foto sede */
+  --color-sede-pie-texto: #614735;
+
+  /* Borde superior pie foto sede */
+  --color-sede-pie-borde: #a9762a;
+
+  /* CITA EN CARTA (carta.html) */
+
+  /* Fondo caja cita barista */
+  --color-cita-fondo: #f3ede2;
+
+  /* Borde izquierdo cita */
+  --color-cita-borde: #a75ec8;
+
+  /* Texto frase cita */
+  --color-cita-texto: #743a16;
+
+  /* Autor cita */
+  --color-cita-autor: #a75ec8;
+
+  /* TABLAS PRECIOS (carta.html) */
+
+  /* Fondo exterior contenedor tabla */
+  --color-tabla-contenedor-fondo: #ffffff;
+
+  /* Borde exterior contenedor tabla */
+  --color-tabla-contenedor-borde: #260c1c;
+
+  /* Fondo caption título tabla */
+  --color-tabla-caption-fondo: #f3ede2;
+
+  /* Texto caption título tabla */
+  --color-tabla-caption-texto: #743a16;
+
+  /* Borde inferior caption */
+  --color-tabla-caption-borde: #260c1c;
+
+  /* Fondo encabezados th tabla */
+  --color-tabla-th-fondo: #743a16;
+
+  /* Texto encabezados th tabla */
+  --color-tabla-th-texto: #faf7f2;
+
+  /* Filas pares cebra tabla */
+  --color-tabla-fila-par: #f8f4ed;
+
+  /* Filas impares tabla */
+  --color-tabla-fila-impar: #ffffff;
+
+  /* Fila tabla hover */
+  --color-tabla-hover: #edf2e6;
+
+  /* Borde divisor celdas tabla */
+  --color-tabla-celda-borde: #a9762a;
+
+  /* Texto precios columna derecha */
+  --color-tabla-precio: #743a16;
+
+  /* FORMULARIO RESERVAS (reservas.html) */
+
+  /* Fondo fieldset formulario */
+  --color-form-fondo: #ffffff;
+
+  /* Borde fieldset formulario */
+  --color-form-borde: #260c1c;
+
+  /* Legend título grupo formulario */
+  --color-form-legend: #743a16;
+
+  /* Label etiqueta campo formulario */
+  --color-form-label: #743a16;
+
+  /* Fondo inputs, select y textarea */
+  --color-form-input-fondo: #ffffff;
+
+  /* Texto inputs formulario */
+  --color-form-input-texto: #2b1d14;
+
+  /* Borde inputs formulario */
+  --color-form-input-borde: #260c1c;
+
+  /* Focus borde y outline inputs */
+  --color-form-focus: #a75ec8;
+
+  /* Color control radio y checkbox */
+  --color-form-control: #231931;
+
+  /* GLOSARIO (index.html) */
+
+  /* Fondo caja glosario */
+  --color-glosario-fondo: #ffffff;
+
+  /* Borde caja glosario */
+  --color-glosario-borde: #260c1c;
+
+  /* Término título glosario */
+  --color-glosario-termino: #743a16;
+
+  /* Definición párrafo glosario */
+  --color-glosario-definicion: #4a1e56;
+
+  /* INDICE ANCLAS (carta.html) */
+
+  /* Fondo caja índice anclas */
+  --color-anclas-fondo: #f3ede2;
+
+  /* Borde caja índice anclas */
+  --color-anclas-borde: #260c1c;
+
+  /* Título índice anclas */
+  --color-anclas-titulo: #743a16;
+
+  /* Fondo enlace anclas */
+  --color-anclas-enlace-fondo: #ffffff;
+
+  /* Texto enlace anclas */
+  --color-anclas-enlace-texto: #734f3a;
+
+  /* Borde enlace anclas */
+  --color-anclas-enlace-borde: #260c1c;
+
+  /* Fondo enlace anclas hover */
+  --color-anclas-hover-fondo: #231931;
+
+  /* Texto enlace anclas hover */
+  --color-anclas-hover-texto: #f5e6ff;
+
+  /* Focus contorno anclas */
+  --color-anclas-focus: #a75ec8;
+
+  /* PIE DE PAGINA (FOOTER) */
+
+  /* Fondo pie página footer */
+  --color-pie-fondo: #743a16;
+
+  /* Borde superior pie página */
+  --color-pie-borde: #a75ec8;
+
+  /* Títulos columnas pie página */
+  --color-pie-titulos: #f5e6ff;
+
+  /* Texto párrafos pie página */
+  --color-pie-texto: #faf7f2;
+
+  /* Texto horario small pie página */
+  --color-pie-horario: #ffffff;
+
+  /* Enlaces pie página */
+  --color-pie-enlace: #faf7f2;
+
+  /* Enlaces pie página hover */
+  --color-pie-enlace-hover: #a75ec8;
+
+  /* Texto créditos pie página */
+  --color-pie-creditos: #f8f4ed;
+
+  /* Borde divisor créditos pie */
+  --color-pie-creditos-borde: #734f3a;
+
+  --color-transparente: transparent;
 }
 
-/* para que los bordes y rellenos no rompan las cajas */
+/* Reset box-sizing */
 *,
 *::before,
 *::after {
@@ -72,13 +309,13 @@
   padding: 0;
 }
 
-/* tamano base y scroll suave */
+/* Fuente base 16px y scroll suave */
 html {
   font-size: 100%;
   scroll-behavior: smooth;
 }
 
-/* letra general y fondo del cuerpo */
+/* Tipografía base, texto y altura mínima */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--color-texto-cuerpo);
@@ -87,7 +324,7 @@ body {
   min-height: 100vh;
 }
 
-/* para que las fotos no se salgan del contenedor */
+/* Imágenes fluidas */
 img {
   max-width: 100%;
   height: auto;

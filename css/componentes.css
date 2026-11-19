@@ -1,4 +1,4 @@
-/* lista del menu en cuadricula */
+/* Menú navegación cabecera */
 .menu__lista {
   display: grid;
   grid-template-columns: 1fr;
@@ -11,43 +11,43 @@
   width: 100%;
 }
 
-/* botones del menu con letra lila pastel */
+/* Enlaces navegación cabecera */
 .menu__enlace {
   display: block;
   text-align: center;
   padding: 0.625rem 1rem;
-  color: var(--color-pastel-claro);
+  color: var(--color-menu-texto);
   text-decoration: none;
   font-weight: 600;
   border-radius: 0.375rem;
-  border: 1px solid var(--color-borde-claro);
-  background-color: var(--color-fondo-oscuro);
+  border: 1px solid var(--color-menu-borde);
+  background-color: var(--color-menu-fondo);
 }
 
-/* cuando paso el mouse por el enlace */
+/* Enlace menú hover */
 .menu__enlace:hover {
-  background-color: var(--color-pastel-destacado);
-  color: var(--color-primario);
-  border-color: var(--color-pastel-destacado);
+  background-color: var(--color-menu-hover-fondo);
+  color: var(--color-menu-hover-texto);
+  border-color: var(--color-menu-hover-fondo);
 }
 
-/* cuando navego con teclado */
+/* Enlace menú focus teclado */
 .menu__enlace:focus {
-  outline: 2px solid var(--color-pastel-claro);
+  outline: 2px solid var(--color-menu-texto);
   outline-offset: 0.125rem;
-  background-color: var(--color-pastel-destacado);
-  color: var(--color-primario);
+  background-color: var(--color-menu-hover-fondo);
+  color: var(--color-menu-hover-texto);
 }
 
-/* pagina donde estoy parado */
+/* Enlace menú página activa */
 .menu__enlace--activo {
-  background-color: var(--color-pastel-destacado);
-  color: var(--color-primario);
-  border-color: var(--color-pastel-destacado);
+  background-color: var(--color-menu-hover-fondo);
+  color: var(--color-menu-hover-texto);
+  border-color: var(--color-menu-hover-fondo);
   font-weight: 700;
 }
 
-/* botones normales */
+/* Botón base */
 .boton {
   display: inline-block;
   padding: 0.75rem 1.5rem;
@@ -61,45 +61,45 @@
   border: 2px solid var(--color-transparente);
 }
 
-/* boton morado principal */
+/* Botón acción principal Reservar */
 .boton--primario {
-  background-color: var(--color-primario);
-  color: var(--color-pastel-claro);
-  border-color: var(--color-primario);
+  background-color: var(--color-boton-primario-fondo);
+  color: var(--color-boton-primario-texto);
+  border-color: var(--color-boton-primario-borde);
 }
 
 .boton--primario:hover {
-  background-color: var(--color-pastel-destacado);
-  color: var(--color-primario);
-  border-color: var(--color-pastel-destacado);
+  background-color: var(--color-boton-primario-hover-fondo);
+  color: var(--color-boton-primario-hover-texto);
+  border-color: var(--color-boton-primario-hover-fondo);
 }
 
 .boton--primario:focus {
-  outline: 2px solid var(--color-titulos);
+  outline: 2px solid var(--color-boton-primario-focus);
   outline-offset: 0.125rem;
-  background-color: var(--color-pastel-destacado);
-  color: var(--color-primario);
+  background-color: var(--color-boton-primario-hover-fondo);
+  color: var(--color-boton-primario-hover-texto);
 }
 
-/* boton blanco secundario */
+/* Botón acción secundaria Ver carta */
 .boton--secundario {
-  background-color: var(--color-blanco);
-  color: var(--color-titulos);
-  border-color: var(--color-titulos);
+  background-color: var(--color-boton-secundario-fondo);
+  color: var(--color-boton-secundario-texto);
+  border-color: var(--color-boton-secundario-borde);
 }
 
 .boton--secundario:hover {
-  background-color: var(--color-fondo-tarjeta);
-  border-color: var(--color-pastel-destacado);
-  color: var(--color-primario);
+  background-color: var(--color-boton-secundario-hover-fondo);
+  border-color: var(--color-boton-secundario-hover-borde);
+  color: var(--color-boton-secundario-hover-texto);
 }
 
 .boton--secundario:focus {
-  outline: 2px solid var(--color-pastel-destacado);
+  outline: 2px solid var(--color-boton-secundario-hover-borde);
   outline-offset: 0.125rem;
 }
 
-/* tablas de precios */
+/* Tablas productos y precios (carta.html) */
 .tabla {
   width: 100%;
   border-collapse: collapse;
@@ -107,86 +107,94 @@
   text-align: left;
 }
 
+/* Caption título tabla (carta.html) */
 .tabla__caption {
   font-family: 'Georgia', 'Times New Roman', serif;
   font-size: 1.125rem;
   font-weight: 700;
-  color: var(--color-titulos);
+  color: var(--color-tabla-caption-texto);
   padding: 0.75rem 1rem;
   text-align: left;
-  background-color: var(--color-fondo-tarjeta);
-  border-bottom: 2px solid var(--color-borde);
+  background-color: var(--color-tabla-caption-fondo);
+  border-bottom: 2px solid var(--color-tabla-caption-borde);
 }
 
+/* Celdas tabla */
 .tabla th,
 .tabla td {
   padding: 0.75rem 1rem;
-  border-bottom: 1px solid var(--color-borde-claro);
+  border-bottom: 1px solid var(--color-tabla-celda-borde);
 }
 
+/* Encabezados th tabla */
 .tabla th {
-  background-color: var(--color-titulos);
-  color: var(--color-texto-claro);
+  background-color: var(--color-tabla-th-fondo);
+  color: var(--color-tabla-th-texto);
   font-weight: 600;
 }
 
-/* filas alternas tipo cebra */
+/* Filas pares cebra tabla */
 .tabla tbody tr:nth-child(even) {
-  background-color: var(--color-fila-tabla);
+  background-color: var(--color-tabla-fila-par);
 }
 
+/* Filas impares tabla */
 .tabla tbody tr:nth-child(odd) {
-  background-color: var(--color-blanco);
+  background-color: var(--color-tabla-fila-impar);
 }
 
-/* cuando paso el mouse por la fila */
+/* Fila tabla hover */
 .tabla tbody tr:hover {
-  background-color: var(--color-fondo-hover-tabla);
+  background-color: var(--color-tabla-hover);
 }
 
-/* precio a la derecha */
+/* Precios alineados derecha */
 .tabla__celda--precio {
   text-align: right;
   font-weight: 700;
-  color: var(--color-titulos);
+  color: var(--color-tabla-precio);
   white-space: nowrap;
 }
 
-/* formulario de reserva */
+/* Formulario reservas (reservas.html) */
 .formulario {
   display: grid;
   gap: 1.5rem;
 }
 
+/* Fieldset grupo campos (reservas.html) */
 .formulario__seccion {
-  border: 1px solid var(--color-borde);
+  border: 1px solid var(--color-form-borde);
   border-radius: 0.5rem;
   padding: 1.25rem;
-  background-color: var(--color-blanco);
+  background-color: var(--color-form-fondo);
   display: grid;
   gap: 1rem;
 }
 
+/* Legend título grupo (reservas.html) */
 .formulario__leyenda {
   font-family: 'Georgia', 'Times New Roman', serif;
   font-weight: 700;
   font-size: 1.125rem;
-  color: var(--color-titulos);
+  color: var(--color-form-legend);
   padding: 0 0.5rem;
 }
 
+/* Grupo label e input */
 .formulario__grupo {
   display: grid;
   gap: 0.375rem;
 }
 
+/* Label etiqueta campo */
 .formulario__etiqueta {
   font-weight: 600;
   font-size: 0.9375rem;
-  color: var(--color-titulos);
+  color: var(--color-form-label);
 }
 
-/* inputs del formulario */
+/* Inputs, select y textarea */
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -199,13 +207,13 @@ textarea {
   padding: 0.625rem 0.75rem;
   font-family: inherit;
   font-size: 1rem;
-  color: var(--color-texto-cuerpo);
-  background-color: var(--color-blanco);
-  border: 1px solid var(--color-borde);
+  color: var(--color-form-input-texto);
+  background-color: var(--color-form-input-fondo);
+  border: 1px solid var(--color-form-input-borde);
   border-radius: 0.375rem;
 }
 
-/* borde lila cuando hago clic en el input */
+/* Input y textarea focus */
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
@@ -214,17 +222,18 @@ input[type="time"]:focus,
 input[type="number"]:focus,
 select:focus,
 textarea:focus {
-  outline: 2px solid var(--color-pastel-destacado);
+  outline: 2px solid var(--color-form-focus);
   outline-offset: 0.125rem;
-  border-color: var(--color-pastel-destacado);
+  border-color: var(--color-form-focus);
 }
 
+/* Textarea multilínea */
 textarea {
   resize: vertical;
   min-height: 6rem;
 }
 
-/* opciones de radio y checkbox */
+/* Fila opción radio y checkbox */
 .formulario__opcion {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -235,40 +244,45 @@ textarea {
   margin-bottom: 0.375rem;
 }
 
+/* Controles radio y checkbox */
 input[type="radio"],
 input[type="checkbox"] {
   width: 1.125rem;
   height: 1.125rem;
-  accent-color: var(--color-primario);
+  accent-color: var(--color-form-control);
   cursor: pointer;
 }
 
+/* Radio y checkbox focus */
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-  outline: 2px solid var(--color-pastel-destacado);
+  outline: 2px solid var(--color-form-focus);
   outline-offset: 0.125rem;
 }
 
+/* Botón enviar submit */
 button[type="submit"] {
   justify-self: start;
 }
 
-/* anclas de la carta */
+/* Caja índice anclas (carta.html) */
 .indice-anclas {
-  background-color: var(--color-fondo-tarjeta);
-  border: 1px solid var(--color-borde);
+  background-color: var(--color-anclas-fondo);
+  border: 1px solid var(--color-anclas-borde);
   border-radius: 0.5rem;
   padding: 1rem 1.25rem;
   margin-bottom: 1.5rem;
 }
 
+/* Título índice anclas */
 .indice-anclas__titulo {
   font-size: 1rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  color: var(--color-titulos);
+  color: var(--color-anclas-titulo);
 }
 
+/* Lista índice anclas */
 .indice-anclas__lista {
   display: grid;
   grid-template-columns: 1fr;
@@ -277,29 +291,32 @@ button[type="submit"] {
   padding: 0;
 }
 
+/* Enlaces índice anclas */
 .indice-anclas__enlace {
   display: block;
   padding: 0.5rem 0.75rem;
-  background-color: var(--color-blanco);
-  border: 1px solid var(--color-borde);
+  background-color: var(--color-anclas-enlace-fondo);
+  border: 1px solid var(--color-anclas-enlace-borde);
   border-radius: 0.25rem;
   text-decoration: none;
   font-weight: 600;
-  color: var(--color-acento-calido);
+  color: var(--color-anclas-enlace-texto);
 }
 
+/* Enlace anclas hover */
 .indice-anclas__enlace:hover {
-  background-color: var(--color-primario);
-  color: var(--color-pastel-claro);
-  border-color: var(--color-pastel-destacado);
+  background-color: var(--color-anclas-hover-fondo);
+  color: var(--color-anclas-hover-texto);
+  border-color: var(--color-anclas-hover-fondo);
 }
 
+/* Enlace anclas focus */
 .indice-anclas__enlace:focus {
-  outline: 2px solid var(--color-pastel-destacado);
+  outline: 2px solid var(--color-anclas-focus);
   outline-offset: 0.125rem;
 }
 
-/* listas */
+/* Listas ol y ul contenido */
 .lista-caracteristicas,
 .lista-pasos {
   margin-left: 1.5rem;

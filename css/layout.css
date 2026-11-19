@@ -1,8 +1,8 @@
-/* cabecera de arriba */
+/* Cabecera superior navegación */
 .cabecera {
   width: 100%;
   background: var(--gradiente-cabecera);
-  border-bottom: 3px solid var(--color-pastel-destacado);
+  border-bottom: 3px solid var(--color-cabecera-borde);
 }
 
 .cabecera__interior {
@@ -22,20 +22,20 @@
   font-family: 'Georgia', 'Times New Roman', serif;
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--color-texto-claro);
+  color: var(--color-cabecera-marca);
   display: block;
 }
 
 .cabecera__subtitulo {
   font-size: 0.8125rem;
-  color: var(--color-pastel-claro);
+  color: var(--color-cabecera-subtitulo);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   display: block;
   margin-top: 0.25rem;
 }
 
-/* cuadricula principal: en movil arranca en 1 columna */
+/* Maqueta cuadrícula móvil 1 columna */
 .maqueta {
   display: grid;
   grid-template-columns: 1fr;
@@ -44,7 +44,7 @@
   margin-bottom: 2.5rem;
 }
 
-/* ocupar todo el ancho */
+/* Bloque ancho completo */
 .bloque--completo {
   grid-column: 1 / -1;
 }
@@ -57,7 +57,7 @@
   grid-column: 1 / -1;
 }
 
-/* portada con foto de fondo */
+/* Portada hero (index.html) */
 .hero {
   grid-column: 1 / -1;
   min-height: 50vh;
@@ -70,23 +70,26 @@
   background-position: center;
   border-radius: 0.5rem;
   padding: 3rem 1.5rem;
-  color: var(--color-texto-claro);
-  box-shadow: 0 4px 8px var(--color-sombra-tarjeta);
+  color: var(--color-hero-titulo);
+  box-shadow: 0 4px 8px var(--color-hero-sombra);
 }
 
+/* Título hero */
 .hero__titulo {
-  color: var(--color-texto-claro);
+  color: var(--color-hero-titulo);
   font-size: 2.5rem;
   margin-bottom: 0.75rem;
 }
 
+/* Texto bajada hero */
 .hero__bajada {
-  color: var(--color-fondo-pagina);
+  color: var(--color-hero-bajada);
   font-size: 1.125rem;
   max-width: 55ch;
   margin-bottom: 1.5rem;
 }
 
+/* Botones acciones hero */
 .hero__acciones {
   display: grid;
   grid-template-columns: 1fr;
@@ -95,7 +98,7 @@
   max-width: 20rem;
 }
 
-/* galeria de productos que se acomoda sola */
+/* Galería productos autoajustable */
 .galeria-productos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
@@ -103,14 +106,14 @@
   width: 100%;
 }
 
-/* pie de pagina */
+/* Pie página footer */
 .pie {
   grid-column: 1 / -1;
   width: 100%;
-  background-color: var(--color-titulos);
-  color: var(--color-texto-claro);
+  background-color: var(--color-pie-fondo);
+  color: var(--color-pie-texto);
   padding: 2.5rem 0 1.5rem 0;
-  border-top: 4px solid var(--color-pastel-destacado);
+  border-top: 4px solid var(--color-pie-borde);
   margin-top: 3rem;
 }
 
@@ -122,15 +125,19 @@
 }
 
 .pie__columna h3 {
-  color: var(--color-pastel-claro);
+  color: var(--color-pie-titulos);
   font-size: 1.125rem;
   margin-bottom: 0.75rem;
 }
 
 .pie__columna p {
-  color: var(--color-fondo-tarjeta);
+  color: var(--color-pie-texto);
   font-size: 0.9375rem;
   margin-bottom: 0.5rem;
+}
+
+.pie__columna p small {
+  color: var(--color-pie-horario);
 }
 
 .pie__lista {
@@ -143,26 +150,27 @@
 }
 
 .pie__lista a {
-  color: var(--color-fondo-tarjeta);
+  color: var(--color-pie-enlace);
   text-decoration: underline;
   font-size: 0.9375rem;
 }
 
 .pie__lista a:hover {
-  color: var(--color-pastel-destacado);
+  color: var(--color-pie-enlace-hover);
 }
 
+/* Créditos pie página */
 .pie__creditos {
   grid-column: 1 / -1;
-  border-top: 1px solid var(--color-acento-calido);
+  border-top: 1px solid var(--color-pie-creditos-borde);
   padding-top: 1.25rem;
   margin-top: 1rem;
   font-size: 0.8125rem;
-  color: var(--color-fila-tabla);
+  color: var(--color-pie-creditos);
   text-align: center;
 }
 
-/* en pantallas desde 600px (tablets) paso a 2 columnas */
+/* Breakpoint tablets 600px 2 columnas */
 @media (min-width: 600px) {
   .cabecera__interior {
     grid-template-columns: auto 1fr;
@@ -207,7 +215,7 @@
   }
 }
 
-/* en pantallas desde 900px (computador) paso a 3 columnas */
+/* Breakpoint computadores 900px 3 columnas */
 @media (min-width: 900px) {
   .cabecera__interior {
     padding: 1.5rem 1rem;

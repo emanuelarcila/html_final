@@ -1,4 +1,4 @@
-/* centrar el contenido principal */
+/* Contenedor central 75rem centrado */
 .contenedor {
   width: 100%;
   max-width: 75rem;
@@ -6,114 +6,123 @@
   padding: 0 1rem;
 }
 
-/* estilo de las tarjetas de productos y sedes */
+/* Tarjetas productos (index.html) y sedes (sedes.html) */
 .tarjeta {
-  background-color: var(--color-blanco);
-  border: 1px solid var(--color-borde);
+  background-color: var(--color-tarjeta-fondo);
+  border: 1px solid var(--color-tarjeta-borde);
   border-radius: 0.5rem;
   padding: 1.25rem;
-  box-shadow: 0 2px 4px var(--color-sombra-tarjeta);
+  box-shadow: 0 2px 4px var(--color-tarjeta-sombra);
 }
 
-/* tarjeta destacada */
+/* Tarjeta variante destacada */
 .tarjeta--destacada {
-  border-color: var(--color-pastel-destacado);
-  background-color: var(--color-fondo-tarjeta);
+  border-color: var(--color-tarjeta-destacada-borde);
+  background-color: var(--color-tarjeta-destacada-fondo);
 }
 
+/* Imagen superior tarjeta */
 .tarjeta__imagen {
   width: 100%;
   border-radius: 0.375rem;
   margin-bottom: 0.875rem;
 }
 
+/* Cuadrícula interna tarjeta */
 .tarjeta__cuerpo {
   display: grid;
   gap: 0.5rem;
 }
 
-/* para que la tabla tenga scroll en el celular y no se desborde */
+/* Scroll horizontal tablas móviles */
 .tabla-contenedor {
   width: 100%;
   overflow-x: auto;
   margin-bottom: 1.5rem;
-  border: 1px solid var(--color-borde);
+  border: 1px solid var(--color-tabla-contenedor-borde);
   border-radius: 0.375rem;
-  background-color: var(--color-blanco);
+  background-color: var(--color-tabla-contenedor-fondo);
 }
 
-/* foto de las sedes con su texto abajo */
+/* Contenedor figure fotos sedes (sedes.html) */
 .figura-sede {
-  background-color: var(--color-blanco);
-  border: 1px solid var(--color-borde);
+  background-color: var(--color-sede-fondo);
+  border: 1px solid var(--color-sede-borde);
   border-radius: 0.5rem;
   overflow: hidden;
   margin-bottom: 1rem;
 }
 
+/* Imagen sede */
 .figura-sede__imagen {
   width: 100%;
   height: 14rem;
   object-fit: cover;
 }
 
+/* Pie foto figcaption sede (sedes.html) */
 .figura-sede__pie {
   font-size: 0.875rem;
-  color: var(--color-texto-secundario);
+  color: var(--color-sede-pie-texto);
   padding: 0.625rem 0.875rem;
-  background-color: var(--color-fila-tabla);
+  background-color: var(--color-sede-pie-fondo);
   font-style: italic;
-  border-top: 1px solid var(--color-borde-claro);
+  border-top: 1px solid var(--color-sede-pie-borde);
 }
 
-/* cita textual con linea al lado */
+/* Bloque cita barista (carta.html) */
 .cita {
-  background-color: var(--color-fondo-tarjeta);
-  border-left: 4px solid var(--color-pastel-destacado);
+  background-color: var(--color-cita-fondo);
+  border-left: 4px solid var(--color-cita-borde);
   border-radius: 0.25rem;
   padding: 1.25rem 1.5rem;
   margin: 1.25rem 0;
 }
 
+/* Frase cita (carta.html) */
 .cita__texto {
   font-family: 'Georgia', 'Times New Roman', serif;
   font-size: 1.0625rem;
   font-style: italic;
-  color: var(--color-titulos);
+  color: var(--color-cita-texto);
   margin-bottom: 0.5rem;
 }
 
+/* Autor cita (carta.html) */
 .cita__autor {
   display: block;
   font-size: 0.875rem;
   font-weight: 700;
-  color: var(--color-pastel-destacado);
+  color: var(--color-cita-autor);
   text-align: right;
 }
 
-/* lista del glosario */
+/* Contenedor lista glosario (index.html) */
 .glosario-lista {
-  background-color: var(--color-blanco);
-  border: 1px solid var(--color-borde);
+  background-color: var(--color-glosario-fondo);
+  border: 1px solid var(--color-glosario-borde);
   border-radius: 0.5rem;
   padding: 1.25rem;
 }
 
+/* Término técnico glosario (index.html) */
 .glosario-termino {
   font-weight: 700;
-  color: var(--color-titulos);
+  color: var(--color-glosario-termino);
   margin-top: 0.75rem;
   font-size: 1.0625rem;
 }
 
+/* Quita margen superior primer término */
 .glosario-termino:first-child {
   margin-top: 0;
 }
 
+/* Definición glosario (index.html) */
 .glosario-definicion {
   margin-left: 1rem;
   margin-bottom: 0.5rem;
-  color: var(--color-morado-glosario);
+  color: var(--color-glosario-definicion);
   font-size: 1rem;
   line-height: 1.6;
 }
