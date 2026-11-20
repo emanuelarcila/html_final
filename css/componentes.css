@@ -181,6 +181,20 @@
   padding: 0 0.5rem;
 }
 
+/* Fila de campos en cuadrícula */
+.formulario__fila {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+/* Grupo de radio buttons en cuadrícula */
+.formulario__grupo-radio {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
 /* Grupo label e input */
 .formulario__grupo {
   display: grid;
@@ -262,7 +276,14 @@ input[type="checkbox"]:focus {
 
 /* Botón enviar submit */
 button[type="submit"] {
-  justify-self: start;
+  justify-self: stretch;
+}
+
+/* Botón a ancho completo */
+.boton--completo {
+  width: 100%;
+  display: block;
+  text-align: center;
 }
 
 /* Caja índice anclas (carta.html) */

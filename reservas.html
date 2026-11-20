@@ -46,133 +46,170 @@
         encuentros de trabajo, celebraciones íntimas o simplemente garantizar tu rincón favorito de lectura.</p>
     </section>
 
-    <!-- Formulario de reserva -->
-    <section class="bloque--doble">
+    <!-- Formulario de reserva en tarjeta principal -->
+    <section class="bloque--completo tarjeta">
+      <h2>Formulario de Solicitud de Reserva</h2>
+      <p>Completa los datos requeridos para gestionar tu espacio en nuestra sede de preferencia.</p>
+
       <form class="formulario" action="#" method="post">
 
-        <!-- Datos personales de contacto -->
+        <!-- Primer grupo: Informacion de contacto -->
         <fieldset class="formulario__seccion">
-          <legend class="formulario__leyenda">1. Información de Contacto</legend>
+          <legend class="formulario__leyenda">1. Información del Titular</legend>
 
-          <div class="formulario__grupo">
-            <label for="campo-nombre" class="formulario__etiqueta">Nombre completo y apellidos:</label>
-            <input type="text" id="campo-nombre" name="nombre" class="formulario__campo"
-              placeholder="Ej. Camilo Ernesto Rodríguez Moreno" required>
+          <!-- Fila 1: Nombre y Correo -->
+          <div class="formulario__fila">
+            <div class="formulario__grupo">
+              <label for="campo-nombre" class="formulario__etiqueta">Nombre completo:</label>
+              <input type="text" id="campo-nombre" name="nombre" class="formulario__campo"
+                placeholder="Ej. Camilo Ernesto Rodríguez" required>
+            </div>
+            <div class="formulario__grupo">
+              <label for="campo-correo" class="formulario__etiqueta">Correo electrónico:</label>
+              <input type="email" id="campo-correo" name="correo" class="formulario__campo"
+                placeholder="correo@ejemplo.com" required>
+            </div>
           </div>
 
-          <div class="formulario__grupo">
-            <label for="campo-correo" class="formulario__etiqueta">Correo electrónico de confirmación:</label>
-            <input type="email" id="campo-correo" name="correo" class="formulario__campo"
-              placeholder="camilo.rodríguez@gmail.com" required>
-          </div>
-
-          <div class="formulario__grupo">
-            <label for="campo-telefono" class="formulario__etiqueta">Número telefónico de contacto:</label>
-            <input type="tel" id="campo-telefono" name="telefono" class="formulario__campo"
-              placeholder="+57 314 491 2736" required>
-          </div>
+          <!-- Fila 2: Telefono y Cantidad exacta -->
+          <div class="formulario__fila">
+            <div class="formulario__grupo">
+              <label for="campo-telefono" class="formulario__etiqueta">Teléfono de contacto:</label>
+              <input type="tel" id="campo-telefono" name="telefono" class="formulario__campo"
+                placeholder="Ej. 300 123 4567" required>
+            </div>
+            <div class="formulario__grupo">
+              <label for="campo-aforo" class="formulario__etiqueta">Cantidad exacta de asistentes:</label>
+              <input type="number" id="campo-aforo" name="aforo" class="formulario__campo" min="1" max="12" value="1"
+                </div>
         </fieldset>
 
-        <!-- Detalles de la reserva -->
+        <!-- Segundo grupo: Detalles y preferencias -->
         <fieldset class="formulario__seccion">
-          <legend class="formulario__leyenda">2. Detalles de la Reserva</legend>
+          <legend class="formulario__leyenda">2. Detalles y Preferencias de la Reserva</legend>
 
-          <!-- Seleccion de sede -->
-          <div class="formulario__grupo">
-            <label for="campo-sede" class="formulario__etiqueta">Sede donde deseas reservar:</label>
-            <select id="campo-sede" name="sede" class="formulario__campo" required>
-              <option value="">-- Selecciona una sede --</option>
-              <option value="centro">Sede Centro Histórico (Cra 4 # 12-38)</option>
-              <option value="norte">Sede Chapinero Norte (Cll 67 # 8-22)</option>
-              <option value="jardin">Sede Terraza El Jardín (Cra 15 # 85-14)</option>
-            </select>
+          <!-- Fila 3: Sede y Tipo de mesa -->
+          <div class="formulario__fila">
+            <div class="formulario__grupo">
+              <label for="campo-sede" class="formulario__etiqueta">Sede de preferencia:</label>
+              <select id="campo-sede" name="sede" class="formulario__campo" required>
+                <option value="">Seleccione una sede</option>
+                <option value="centro">Sede Histórica (La Candelaria)</option>
+                <option value="norte">Sede Chapinero Norte</option>
+                <option value="jardin">Sede Terraza El Jardín</option>
+              </select>
+            </div>
+            <div class="formulario__grupo">
+              <label for="campo-personas" class="formulario__etiqueta">Tipo de experiencia:</label>
+              <select id="campo-personas" name="personas" class="formulario__campo" required>
+                <option value="">Seleccione cantidad</option>
+                <option value="1">Rincón de lectura (1)</option>
+                <option value="2" selected>Mesa íntima (2-4)</option>
+                <option value="4">Reunión / Familiar (4-6)</option>
+                <option value="mas">Grupo especial (6+)</option>
+              </select>
+            </div>
           </div>
 
-          <!-- Fecha y hora -->
-          <div class="formulario__grupo">
-            <label for="campo-fecha" class="formulario__etiqueta">Fecha de la visita:</label>
-            <input type="date" id="campo-fecha" name="fecha" class="formulario__campo" required>
+          <!-- Fila 4: Fecha y Hora -->
+          <div class="formulario__fila">
+            <div class="formulario__grupo">
+              <label for="campo-fecha" class="formulario__etiqueta">Fecha de la reserva:</label>
+              <input type="date" id="campo-fecha" name="fecha" class="formulario__campo" required>
+            </div>
+            <div class="formulario__grupo">
+              <label for="campo-hora" class="formulario__etiqueta">Hora preferida:</label>
+              <input type="time" id="campo-hora" name="hora" class="formulario__campo" required>
+            </div>
           </div>
 
+          <!-- Seleccion de ambiente con botones de radio -->
           <div class="formulario__grupo">
-            <label for="campo-hora" class="formulario__etiqueta">Hora estimada de llegada:</label>
-            <input type="time" id="campo-hora" name="hora" class="formulario__campo" required>
+            <span class="formulario__etiqueta">Ambiente de preferencia:</span>
+            <div class="formulario__grupo-radio">
+              <label class="formulario__opcion">
+                <input type="radio" name="zona" value="interior" checked>
+                Salón interior tranquilo
+              </label>
+              <label class="formulario__opcion">
+                <input type="radio" name="zona" value="terraza">
+                Terraza al aire libre
+              </label>
+              <label class="formulario__opcion">
+                <input type="radio" name="zona" value="barra">
+                Barra de filtrados
+              </label>
+            </div>
           </div>
 
-          <!-- Numero de personas -->
+          <!-- Requerimientos especiales -->
           <div class="formulario__grupo">
-            <label for="campo-personas" class="formulario__etiqueta">Cantidad de personas:</label>
-            <input type="number" id="campo-personas" name="personas" class="formulario__campo" min="1" max="12"
-              value="2" required>
+            <label for="campo-notas" class="formulario__etiqueta">Requerimientos o notas especiales (opcional):</label>
+            <textarea id="campo-notas" name="notas" class="formulario__campo" rows="3"
+              placeholder="Ej. Silla para bebé, toma de corriente para laptop o celebración especial..."></textarea>
           </div>
 
-          <!-- Zona o ambiente -->
-          <div class="formulario__grupo">
-            <span class="formulario__etiqueta">Zona de preferencia:</span>
-            <label class="formulario__opcion">
-              <input type="radio" name="zona" value="interior" checked>
-              Salón interior tranquilo (climatizado)
-            </label>
-            <label class="formulario__opcion">
-              <input type="radio" name="zona" value="terraza">
-              Terraza al aire libre (pet-friendly)
-            </label>
-            <label class="formulario__opcion">
-              <input type="radio" name="zona" value="barra">
-              Barra de filtrados (experiencia guiada con barista)
-            </label>
-          </div>
-
-          <!-- Notas especiales -->
-          <div class="formulario__grupo">
-            <label for="campo-notas" class="formulario__etiqueta">Notas o requerimientos especiales (opcional):</label>
-            <textarea id="campo-notas" name="notas" class="formulario__campo" rows="4"
-              placeholder="Cuéntanos si requieres silla para bebé, tomas de corriente para laptop o si celebras alguna ocasión especial..."></textarea>
-          </div>
-
-          <!-- Terminos y boletin -->
+          <!-- Terminos y condiciones -->
           <div class="formulario__grupo">
             <label class="formulario__opcion">
               <input type="checkbox" id="campo-terminos" name="terminos" required>
-              Confirmo mi asistencia puntual y acepto los 15 minutos de tolerancia máxima.
+              Acepto las políticas de reserva y tiempo de tolerancia (15 minutos).
             </label>
             <label class="formulario__opcion">
               <input type="checkbox" id="campo-boletin" name="boletin">
               Deseo recibir invitaciones a talleres de cata y recetas en mi correo.
             </label>
           </div>
-        </fieldset>
 
-        <!-- Boton de envio -->
-        <div>
-          <button type="submit" class="boton boton--primario">Confirmar Solicitud de Reserva</button>
-        </div>
+          <!-- Boton de envio a ancho completo -->
+          <div class="formulario__grupo">
+            <button type="submit" class="boton boton--primario boton--completo">Confirmar Solicitud de Reserva</button>
+          </div>
+
+        </fieldset>
 
       </form>
     </section>
 
-    <!-- Barra lateral con politicas y preguntas frecuentes -->
-    <aside class="tarjeta tarjeta--destacada barra-lateral">
-      <h2>Políticas de Reserva</h2>
-      <p>Para garantizar una grata experiencia a todos nuestros visitantes, ten en cuenta el siguiente protocolo:</p>
+    <!-- Seccion inferior de 3 tarjetas informativas -->
+    <aside class="bloque--completo galeria-productos" aria-label="Información complementaria">
 
-      <!-- Pasos de confirmacion -->
-      <h3>Pasos de Confirmación</h3>
-      <ol class="lista-pasos">
-        <li>Completas el formulario con tus datos y preferencias.</li>
-        <li>Recibes una notificación automática en tu correo.</li>
-        <li>Tu mesa queda reservada con 15 minutos de cortesía.</li>
-        <li>Si necesitas modificar o cancelar, puedes llamarnos a la sede seleccionada.</li>
-      </ol>
+      <!-- Tarjeta 1: Beneficios -->
+      <article class="tarjeta">
+        <h3>Beneficios de Reservar</h3>
+        <p>Tu visita planificada con ventajas exclusivas:</p>
+        <ul class="lista-caracteristicas">
+          <li><strong>Atención preferencial:</strong> Mesa lista al llegar sin filas ni esperas.</li>
+          <li><strong>Rincón garantizado:</strong> Ideal para lectura, trabajo o reuniones.</li>
+          <li><strong>Obsequio de bienvenida:</strong> Degustación de café de origen del día.</li>
+        </ul>
+      </article>
 
-      <!-- Preguntas frecuentes -->
-      <h3>Preguntas Frecuentes</h3>
-      <ul class="lista-caracteristicas">
-        <li><strong>¿Tiene costo reservar?</strong> No, el servicio de reserva es totalmente gratuito.</li>
-        <li><strong>¿Puedo llevar mi mascota?</strong> Sí, seleccionando la opción de zona en terraza.</li>
-        <li><strong>¿Mesas para más de 12 personas?</strong> Escríbenos directamente a eventos@cafealtiplano.com para
-          gestionar una reserva corporativa.</li>
-      </ul>
+      <!-- Tarjeta 2: Glosario de politicas -->
+      <article class="tarjeta">
+        <h3>Glosario de Políticas</h3>
+        <p>Términos clave sobre nuestro protocolo:</p>
+        <dl class="glosario-lista">
+          <dt class="glosario-termino">Tolerancia:</dt>
+          <dd class="glosario-definicion">Tiempo máximo de espera guardando la mesa (15 minutos).</dd>
+          <dt class="glosario-termino">Cancelación:</dt>
+          <dd class="glosario-definicion">Anulación sin costo avisando con 2 horas de anticipación.</dd>
+          <dt class="glosario-termino">Reagendamiento:</dt>
+          <dd class="glosario-definicion">Modificación de fecha u hora sujeta a aforo disponible.</dd>
+        </dl>
+      </article>
+
+      <!-- Tarjeta 3: Pasos de confirmacion -->
+      <article class="tarjeta">
+        <h3>Pasos de Confirmación</h3>
+        <p>Así funciona nuestro sistema:</p>
+        <ol class="lista-pasos">
+          <li>Completas el formulario con tus datos y preferencias.</li>
+          <li>Recibes una notificación automática en tu correo electrónico.</li>
+          <li>Te esperamos en la sede seleccionada a la hora acordada.</li>
+        </ol>
+      </article>
+
     </aside>
 
   </main>
