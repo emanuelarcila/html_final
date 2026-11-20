@@ -349,3 +349,74 @@ button[type="submit"] {
   margin-bottom: 0.5rem;
   line-height: 1.5;
 }
+
+/* Notificación flotante de confirmación (reservas.html) */
+.notificacion-toast {
+  display: none;
+}
+
+.notificacion-toast:target {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.875rem;
+  align-items: center;
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 1000;
+  max-width: 24rem;
+  background-color: var(--color-toast-fondo);
+  border: 1px solid var(--color-toast-borde);
+  border-left: 4px solid var(--color-toast-borde);
+  border-radius: 0.5rem;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 4px 12px var(--color-toast-sombra);
+}
+
+/* Icono éxito toast */
+.notificacion-toast__icono {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: var(--color-toast-icono-fondo);
+  color: var(--color-toast-icono);
+  display: grid;
+  place-content: center;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+/* Cuerpo texto toast */
+.notificacion-toast__cuerpo {
+  margin: 0;
+}
+
+/* Título notificación toast */
+.notificacion-toast__titulo {
+  font-size: 1rem;
+  margin: 0 0 0.25rem;
+  color: var(--color-toast-titulo);
+}
+
+/* Mensaje notificación toast */
+.notificacion-toast__mensaje {
+  font-size: 0.875rem;
+  margin: 0;
+  color: var(--color-toast-texto);
+  line-height: 1.4;
+}
+
+/* Botón cerrar notificación toast */
+.notificacion-toast__cerrar {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-toast-cerrar);
+  line-height: 1;
+  padding: 0.25rem;
+}
+
+.notificacion-toast__cerrar:hover,
+.notificacion-toast__cerrar:focus {
+  color: var(--color-toast-cerrar-hover);
+}

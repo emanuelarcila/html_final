@@ -39,6 +39,16 @@
   <!-- Contenido principal -->
   <main class="contenedor maqueta">
 
+    <!-- Notificación flotante de confirmación (arriba a la derecha) -->
+    <aside id="confirmacion" class="notificacion-toast" role="status" aria-live="polite">
+      <div class="notificacion-toast__icono" aria-hidden="true">&#10003;</div>
+      <div class="notificacion-toast__cuerpo">
+        <h3 class="notificacion-toast__titulo">¡Reserva guardada!</h3>
+        <p class="notificacion-toast__mensaje">Tu mesa ha sido reservada con éxito. ¡Feliz día!</p>
+      </div>
+      <a href="#" class="notificacion-toast__cerrar" aria-label="Cerrar notificación">&times;</a>
+    </aside>
+
     <!-- Introduccion a reservas -->
     <section class="bloque--completo">
       <h1>Reserva Tu Mesa en Café Altiplano</h1>
@@ -51,7 +61,7 @@
       <h2>Formulario de Solicitud de Reserva</h2>
       <p>Completa los datos requeridos para gestionar tu espacio en nuestra sede de preferencia.</p>
 
-      <form class="formulario" action="#" method="post">
+      <form class="formulario" action="#confirmacion" method="get">
 
         <!-- Primer grupo: Informacion de contacto -->
         <fieldset class="formulario__seccion">

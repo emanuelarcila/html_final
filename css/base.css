@@ -298,6 +298,35 @@
   --color-pie-creditos-borde: #734f3a;
 
   --color-transparente: transparent;
+
+  /* NOTIFICACIÓN TOAST (reservas.html) */
+
+  /* Fondo notificación toast */
+  --color-toast-fondo: #ffffff;
+
+  /* Borde notificación toast */
+  --color-toast-borde: #c49a45;
+
+  /* Sombra notificación toast */
+  --color-toast-sombra: rgba(35, 25, 49, 0.2);
+
+  /* Color icono toast */
+  --color-toast-icono: #155724;
+
+  /* Fondo circulo icono toast */
+  --color-toast-icono-fondo: #d4edda;
+
+  /* Titulo notificación toast */
+  --color-toast-titulo: #231931;
+
+  /* Texto mensaje toast */
+  --color-toast-texto: #555555;
+
+  /* Boton cerrar toast */
+  --color-toast-cerrar: #888888;
+
+  /* Hover boton cerrar toast */
+  --color-toast-cerrar-hover: #231931;
 }
 
 /* Reset box-sizing */
