@@ -45,7 +45,7 @@ El contenedor principal (`.maqueta`) utiliza CSS Grid bajo la estrategia móvil 
 
 ## 5. Dificultad Encontrada y Solución
 
-- **Dificultad:** La restricción estricta de IA para la cracion de la pagina como tal, sumada a la necesidad de presentar tablas de precios con 4 columnas que en pantallas móviles tienden a desbordar la ventana horizontalmente, ademas de tener pocos dias para la realizacion del proyecto
+- **Dificultad:** La restricción estricta de IA para la cracion de la pagina como tal, sumada a la gran cantidad de tablas requeridas, de precios con 4 columnas que en pantallas móviles tienden a desbordar la ventana horizontalmente, ademas de tener pocos dias para la realizacion del proyecto
 - **Solución implementada:**
   1. Para la navegación y los botones, se utilizó CSS Grid (`display: grid`) configurando `grid-template-columns: 1fr` en móvil y `grid-template-columns: repeat(4, auto)` a partir de 600 px, demostrando el dominio de Grid en componentes pequeños sin requerir Flexbox.
   2. Para las tablas de precios, se envolvió cada elemento `<table>` dentro de un contenedor `.tabla-contenedor` con `overflow-x: auto; width: 100%;`. De este modo, en pantallas de 500 px la tabla permite un desplazamiento horizontal interno táctil sin romper ni expandir el ancho de la página web completa, garantizando que el diseño se mantenga perfectamente adaptable.

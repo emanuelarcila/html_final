@@ -231,13 +231,13 @@
   --color-glosario-fondo: #ffffff;
 
   /* Borde caja glosario */
-  --color-glosario-borde: #260c1c;
+  --color-glosario-borde: #dfd5c6;
 
   /* Término título glosario */
-  --color-glosario-termino: #743a16;
+  --color-glosario-termino: #542b10;
 
   /* Definición párrafo glosario */
-  --color-glosario-definicion: #4a1e56;
+  --color-glosario-definicion: #444444;
 
   /* INDICE ANCLAS (carta.html) */
 
