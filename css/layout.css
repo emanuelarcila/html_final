@@ -98,8 +98,9 @@
   max-width: 20rem;
 }
 
-/* Galería productos autoajustable */
-.galeria-productos {
+/* Galería productos y talleres autoajustable */
+.galeria-productos,
+.galeria-talleres {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   gap: 1.5rem;
@@ -188,8 +189,13 @@
   }
 
   .menu__lista {
-    grid-template-columns: repeat(4, auto);
-    gap: 0.5rem;
+    grid-template-columns: repeat(5, auto);
+    gap: 0.375rem;
+  }
+
+  .menu__enlace {
+    padding: 0.5rem 0.625rem;
+    font-size: 0.875rem;
   }
 
   .hero__acciones {
@@ -238,6 +244,11 @@
 
   .menu__lista {
     gap: 0.75rem;
+  }
+
+  .menu__enlace {
+    padding: 0.625rem 0.875rem;
+    font-size: 0.9375rem;
   }
 
   .maqueta {

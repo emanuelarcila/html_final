@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talleres y Eventos - Café Altiplano | Cafetería de Especialidad</title>
+
+  <!-- Hojas de estilo externas -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/tipografia.css">
+  <link rel="stylesheet" href="css/cajas.css">
+  <link rel="stylesheet" href="css/componentes.css">
+  <link rel="stylesheet" href="css/layout.css">
+</head>
+
+<body>
+
+  <!-- Cabecera principal -->
+  <header class="cabecera">
+    <div class="contenedor cabecera__interior">
+      <a href="index.html" class="cabecera__logotipo">
+        <span class="cabecera__marca">Café Altiplano</span>
+        <span class="cabecera__subtitulo">Cafetería de Especialidad</span>
+      </a>
+
+      <!-- Menu de navegacion principal -->
+      <nav class="menu" aria-label="Navegación principal">
+        <ul class="menu__lista">
+          <li class="menu__item"><a href="index.html" class="menu__enlace">Inicio</a></li>
+          <li class="menu__item"><a href="carta.html" class="menu__enlace">Carta</a></li>
+          <li class="menu__item"><a href="sedes.html" class="menu__enlace">Sedes</a></li>
+          <li class="menu__item"><a href="reservas.html" class="menu__enlace">Reservas</a></li>
+          <li class="menu__item"><a href="talleres.html" class="menu__enlace menu__enlace--activo">Talleres</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="contenedor maqueta">
+
+    <!-- A. Introduccion y portada -->
+    <section class="hero bloque--completo">
+      <h1 class="hero__titulo">Talleres y Experiencias de Café</h1>
+      <p class="hero__bajada">Cada mes abrimos nuestras sedes para aprender sobre café: desde probar sin ver la etiqueta
+        hasta dibujar corazones en la espuma. Los cupos son limitados.</p>
+      <div class="hero__acciones">
+        <a href="#agenda" class="boton boton--primario">Ver Agenda</a>
+        <a href="#inscripcion" class="boton boton--secundario">Inscribirme Ahora</a>
+      </div>
+    </section>
+
+    <!-- B. Agenda de talleres (Ocupa dos columnas desde 600px: bloque--doble) -->
+    <section id="agenda" class="tarjeta bloque--doble">
+      <h2>Agenda de Talleres</h2>
+      <p>Consultá las fechas programadas para este mes y apartá tu lugar con anticipación.</p>
+
+      <!-- Tabla estructurada dentro de contenedor con scroll horizontal -->
+      <div class="tabla-contenedor">
+        <table class="tabla">
+          <caption class="tabla__caption">Cronograma de talleres y experiencias cafeteras</caption>
+          <thead>
+            <tr>
+              <th scope="col">Fecha</th>
+              <th scope="col">Taller</th>
+              <th scope="col">Sede</th>
+              <th scope="col">Duración</th>
+              <th scope="col" class="tabla__celda--cupos">Cupos</th>
+              <th scope="col" class="tabla__celda--precio">Precio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">7 de marzo</th>
+              <td>Cata a ciegas</td>
+              <td>Centro</td>
+              <td>2 h</td>
+              <td class="tabla__celda--cupos">12</td>
+              <td class="tabla__celda--precio">$ 30.000</td>
+            </tr>
+            <tr>
+              <th scope="row">14 de marzo</th>
+              <td>Latte art para principiantes</td>
+              <td>Norte</td>
+              <td>3 h</td>
+              <td class="tabla__celda--cupos">8</td>
+              <td class="tabla__celda--precio">$ 46.000</td>
+            </tr>
+            <tr>
+              <th scope="row">21 de marzo</th>
+              <td>Métodos de filtrado en casa</td>
+              <td>Centro</td>
+              <td>2 h</td>
+              <td class="tabla__celda--cupos">15</td>
+              <td class="tabla__celda--precio">$ 22.000</td>
+            </tr>
+            <tr>
+              <th scope="row">28 de marzo</th>
+              <td>Del grano a la taza: tueste y origen</td>
+              <td>Sur</td>
+              <td>3 h</td>
+              <td class="tabla__celda--cupos">10</td>
+              <td class="tabla__celda--precio">$ 60.000</td>
+            </tr>
+            <tr>
+              <th scope="row">4 de abril</th>
+              <td>Café y repostería: maridaje</td>
+              <td>Norte</td>
+              <td>2 h</td>
+              <td class="tabla__celda--cupos">12</td>
+              <td class="tabla__celda--precio">$ 30.000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Barra lateral de informacion complementaria (bloque--completo en móvil, span 1 en desktop) -->
+    <aside class="tarjeta tarjeta--destacada barra-lateral">
+      <h2>Información de los Talleres</h2>
+
+      <!-- Figura con imagen descriptiva y figcaption (Requerimiento A) -->
+      <figure class="figura-taller">
+        <img src="imagenes/cappuccino.jpg"
+          alt="Barista vertiendo leche texturizada para crear un corazón en una taza de cappuccino"
+          class="figura-taller__imagen">
+        <figcaption class="figura-taller__pie">Práctica guiada de emulsión de leche y vertido en nuestro taller de latte
+          art.</figcaption>
+      </figure>
+
+      <!-- D. Cómo inscribirse (Lista ordenada) -->
+      <h3>Cómo inscribirse</h3>
+      <ol class="lista-pasos">
+        <li>Elegí el taller y la fecha.</li>
+        <li>Completá el formulario de esta página.</li>
+        <li>Recibirás la confirmación por correo en 24 horas.</li>
+        <li>Presentate 10 minutos antes en la sede.</li>
+      </ol>
+
+      <!-- E. Qué incluye cada taller (Lista sin orden) -->
+      <h3>Qué incluye cada taller</h3>
+      <ul class="lista-caracteristicas">
+        <li>Todos los materiales.</li>
+        <li>Degustación de tres cafés.</li>
+        <li>Certificado de participación.</li>
+        <li>10 % de descuento en la carta ese día.</li>
+      </ul>
+
+      <!-- F. Niveles (Lista de definición) -->
+      <h3>Niveles</h3>
+      <dl class="glosario-lista">
+        <dt class="glosario-termino">Básico</dt>
+        <dd class="glosario-definicion">No requiere experiencia previa.</dd>
+        <dt class="glosario-termino">Intermedio</dt>
+        <dd class="glosario-definicion">Conviene haber asistido a un taller básico.</dd>
+      </dl>
+    </aside>
+
+    <!-- C. Galería de talleres (6 tarjetas autoajustables) -->
+    <section class="bloque--completo">
+      <h2>Nuestros Talleres</h2>
+      <p>Conocé el contenido de cada experiencia y elegí la que mejor se adapte a tu curiosidad cafetera.</p>
+
+      <div class="galeria-talleres">
+        <!-- Tarjeta 1 -->
+        <article class="tarjeta">
+          <div class="tarjeta__cuerpo">
+            <h3>Cata a ciegas</h3>
+            <p>Reconocé aromas y sabores sin ver la etiqueta.</p>
+            <p><strong>Nivel:</strong> Básico</p>
+          </div>
+        </article>
+
+        <!-- Tarjeta 2 -->
+        <article class="tarjeta">
+          <div class="tarjeta__cuerpo">
+            <h3>Latte art para principiantes</h3>
+            <p>Primeros dibujos en la espuma: corazón y hoja.</p>
+            <p><strong>Nivel:</strong> Básico</p>
+          </div>
+        </article>
+
+        <!-- Tarjeta 3 -->
+        <article class="tarjeta">
+          <div class="tarjeta__cuerpo">
+            <h3>Métodos de filtrado en casa</h3>
+            <p>Prensa, filtro y moka: cuándo usar cada uno.</p>
+            <p><strong>Nivel:</strong> Intermedio</p>
+          </div>
+        </article>
+
+        <!-- Tarjeta 4 -->
+        <article class="tarjeta">
+          <div class="tarjeta__cuerpo">
+            <h3>Del grano a la taza</h3>
+            <p>Cómo el tueste y el origen cambian el sabor.</p>
+            <p><strong>Nivel:</strong> Intermedio</p>
+          </div>
+        </article>
+
+        <!-- Tarjeta 5 -->
+        <article class="tarjeta">
+          <div class="tarjeta__cuerpo">
+            <h3>Café y repostería</h3>
+            <p>Combinaciones que se potencian.</p>
+            <p><strong>Nivel:</strong> Básico</p>
+          </div>
+        </article>
+
+        <!-- Tarjeta 6 -->
+        <article class="tarjeta">
+          <div class="tarjeta__cuerpo">
+            <h3>Pequeños baristas</h3>
+            <p>Taller para niñas y niños de 8 a 12 años, con un adulto.</p>
+            <p><strong>Nivel:</strong> Básico</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- G. Formulario de inscripcion -->
+    <section id="inscripcion" class="bloque--completo tarjeta">
+      <h2>Formulario de Inscripción</h2>
+      <p>Completá los siguientes datos para reservar tu cupo en el taller de tu interés.</p>
+
+      <form class="formulario" action="#" method="get">
+        <fieldset class="formulario__seccion">
+          <legend class="formulario__leyenda">Datos Personales y Selección del Taller</legend>
+
+          <!-- Fila 1: Nombre y Correo -->
+          <div class="formulario__fila">
+            <div class="formulario__grupo">
+              <label for="campo-nombre" class="formulario__etiqueta">Nombre completo:</label>
+              <input type="text" id="campo-nombre" name="nombre" class="formulario__campo"
+                placeholder="Ej. Camila Morales Restrepo" required>
+            </div>
+            <div class="formulario__grupo">
+              <label for="campo-correo" class="formulario__etiqueta">Correo electrónico:</label>
+              <input type="email" id="campo-correo" name="correo" class="formulario__campo"
+                placeholder="camila.morales@correo.com" required>
+            </div>
+          </div>
+
+          <!-- Fila 2: Taller y Acompañantes -->
+          <div class="formulario__fila">
+            <div class="formulario__grupo">
+              <label for="campo-taller" class="formulario__etiqueta">Taller:</label>
+              <select id="campo-taller" name="taller" class="formulario__campo" required>
+                <option value="" disabled selected>-- Seleccioná un taller de la agenda --</option>
+                <option value="cata-a-ciegas">Cata a ciegas (7 de marzo - Centro)</option>
+                <option value="latte-art">Latte art para principiantes (14 de marzo - Norte)</option>
+                <option value="filtrado-en-casa">Métodos de filtrado en casa (21 de marzo - Centro)</option>
+                <option value="del-grano-a-la-taza">Del grano a la taza: tueste y origen (28 de marzo - Sur)</option>
+                <option value="cafe-y-reposteria">Café y repostería: maridaje (4 de abril - Norte)</option>
+              </select>
+            </div>
+            <div class="formulario__grupo">
+              <label for="campo-acompanantes" class="formulario__etiqueta">Número de acompañantes (máx. 3):</label>
+              <input type="number" id="campo-acompanantes" name="acompanantes" class="formulario__campo" min="0" max="3"
+                value="0" placeholder="0" required>
+            </div>
+          </div>
+
+          <!-- Fila 3: Nivel (radio) -->
+          <div class="formulario__grupo">
+            <span class="formulario__etiqueta">Nivel:</span>
+            <div class="formulario__grupo-radio">
+              <label class="formulario__opcion" for="nivel-basico">
+                <input type="radio" id="nivel-basico" name="nivel" value="basico" required>
+                Básico
+              </label>
+              <label class="formulario__opcion" for="nivel-intermedio">
+                <input type="radio" id="nivel-intermedio" name="nivel" value="intermedio">
+                Intermedio
+              </label>
+            </div>
+          </div>
+
+          <!-- Fila 4: Recordatorios (checkbox) -->
+          <div class="formulario__grupo">
+            <label class="formulario__opcion" for="campo-recordatorios">
+              <input type="checkbox" id="campo-recordatorios" name="recordatorios">
+              Quiero recibir recordatorios
+            </label>
+          </div>
+
+          <!-- Fila 5: Comentarios (textarea) -->
+          <div class="formulario__grupo">
+            <label for="campo-comentarios" class="formulario__etiqueta">Comentarios:</label>
+            <textarea id="campo-comentarios" name="comentarios" class="formulario__campo" rows="4"
+              placeholder="Escribí aquí si tenés alguna intolerancia, duda previa o requerimiento..."></textarea>
+          </div>
+
+          <!-- Botón de envío -->
+          <div class="formulario__grupo">
+            <button type="submit" class="boton boton--primario boton--completo">Inscribirme</button>
+          </div>
+
+        </fieldset>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Pie de pagina -->
+  <footer class="pie">
+    <div class="contenedor pie__interior">
+      <!-- Datos de la cafeteria -->
+      <div class="pie__columna">
+        <h3>Café Altiplano</h3>
+        <p>Cafetería de especialidad comprometida con el café de origen andino, la sostenibilidad y el buen servicio.
+        </p>
+        <p><small>Horario general: Lunes a Domingo de 7:00 a 21:00</small></p>
+      </div>
+
+      <!-- Enlaces de navegacion -->
+      <div class="pie__columna">
+        <h3>Navegación</h3>
+        <ul class="pie__lista">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="carta.html">Nuestra Carta</a></li>
+          <li><a href="sedes.html">Nuestras Sedes</a></li>
+          <li><a href="reservas.html">Reservar Mesa</a></li>
+          <li><a href="talleres.html">Talleres y Eventos</a></li>
+        </ul>
+      </div>
+
+      <!-- Enlaces externos -->
+      <div class="pie__columna">
+        <h3>Comunidad y Cultura</h3>
+        <p>Aprende más sobre el café colombiano y la cultura cafetera mundial:</p>
+        <ul class="pie__lista">
+          <li>
+            <a href="https://scaa.org" target="_blank" rel="noopener noreferrer">Specialty Coffee Association (SCA)</a>
+          </li>
+          <li>
+            <a href="https://federaciondecafeteros.org" target="_blank" rel="noopener noreferrer">Federación de
+              Cafeteros</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Creditos -->
+      <div class="pie__creditos">
+        <p>&copy; 2026 Café Altiplano. Proyecto académico de desarrollo web.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

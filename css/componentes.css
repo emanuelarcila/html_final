@@ -156,6 +156,14 @@
   white-space: nowrap;
 }
 
+/* Cupos disponibles en agenda de talleres */
+.tabla__celda--cupos {
+  text-align: right;
+  font-weight: 600;
+  color: var(--color-tabla-cupos);
+  white-space: nowrap;
+}
+
 /* Formulario reservas (reservas.html) */
 .formulario {
   display: grid;

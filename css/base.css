@@ -144,6 +144,23 @@
   /* Borde superior pie foto sede */
   --color-sede-pie-borde: #a9762a;
 
+  /* FIGURA TALLERES (talleres.html) */
+
+  /* Fondo figura foto taller */
+  --color-taller-figura-fondo: #ffffff;
+
+  /* Borde figura foto taller */
+  --color-taller-figura-borde: #260c1c;
+
+  /* Fondo pie foto taller figcaption */
+  --color-taller-figura-pie-fondo: #f8f4ed;
+
+  /* Texto pie foto taller */
+  --color-taller-figura-pie-texto: #614735;
+
+  /* Borde superior pie foto taller */
+  --color-taller-figura-pie-borde: #a9762a;
+
   /* CITA EN CARTA (carta.html) */
 
   /* Fondo caja cita barista */
@@ -195,6 +212,9 @@
 
   /* Texto precios columna derecha */
   --color-tabla-precio: #743a16;
+
+  /* Texto cupos disponibles tabla agenda */
+  --color-tabla-cupos: #2b1d14;
 
   /* FORMULARIO RESERVAS (reservas.html) */
 

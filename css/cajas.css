@@ -70,6 +70,32 @@
   border-top: 1px solid var(--color-sede-pie-borde);
 }
 
+/* Contenedor figure fotos talleres (talleres.html) */
+.figura-taller {
+  background-color: var(--color-taller-figura-fondo);
+  border: 1px solid var(--color-taller-figura-borde);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+/* Imagen taller */
+.figura-taller__imagen {
+  width: 100%;
+  height: 14rem;
+  object-fit: cover;
+}
+
+/* Pie foto figcaption taller (talleres.html) */
+.figura-taller__pie {
+  font-size: 0.875rem;
+  color: var(--color-taller-figura-pie-texto);
+  padding: 0.625rem 0.875rem;
+  background-color: var(--color-taller-figura-pie-fondo);
+  font-style: italic;
+  border-top: 1px solid var(--color-taller-figura-pie-borde);
+}
+
 /* Bloque cita barista (carta.html) */
 .cita {
   background-color: var(--color-cita-fondo);
